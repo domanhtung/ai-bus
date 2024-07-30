@@ -17,10 +17,10 @@ const Banner = () => {
         </span>
       </div>
       <div data-aos="fade-right">
-        <h1 className="pt-6 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-110 duration-200">
+        <h1 className="pt-6 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-105 duration-200">
           THE HIGH-TECH BUS
         </h1>
-        <h2 className="flex gap-5 items-center pt-5 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-110 duration-200">
+        <h2 className="flex gap-5 items-center pt-5 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-105 duration-200">
           <Image
             src={"/images/arrow-right.svg"}
             width={96}
