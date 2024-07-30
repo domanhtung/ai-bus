@@ -31,9 +31,9 @@ const Footer = () => {
               <div className="mb-4 text-background text-[14px] font-medium uppercase">
                 CONTACTS
               </div>
-              {socialList?.map((social) => {
+              {socialList?.map((social, index) => {
                 return (
-                  <Link href={social?.link}>
+                  <Link key={index} href={social?.link}>
                     <div className="flex mb-4 items-center gap-4 text-background text-[14px] font-medium uppercase hover:text-primary">
                       <Image
                         src={social?.icon}
