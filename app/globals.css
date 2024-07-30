@@ -27,6 +27,44 @@ body {
   top: 96px;
 }
 
+.animation-partner {
+  width: fit-content;
+  animation: animationPartner 25s linear infinite;
+}
+
+.testimonial-swip {
+  width: calc(1448px - 612px + 50vw - 724px);
+}
+.testimonial-swip .swiper-slide {
+  padding: 16px 24px;
+  duration: 3s linear;
+}
+.testimonial-swip .swiper-slide-active {
+  padding: 0px 0px;
+}
+.testimonial-swip .swiper-slide-active .card-testimonial {
+  background: #ff6c5c;
+}
+.testimonial-swip .swiper-slide-active .card-testimonial p {
+  color: #050505;
+  opacity: 1;
+}
+.testimonial-swip .swiper-slide-active .card-testimonial .line {
+  background-color: #050505;
+}
+.bg-contact {
+  background-image: url("/images/home/contact.svg");
+  background-color: #ff6c5c;
+}
+@keyframes animationPartner {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-50% - 12px), 0);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

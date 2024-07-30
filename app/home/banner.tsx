@@ -16,21 +16,23 @@ const Banner = () => {
           research and development center
         </span>
       </div>
-      <h1 className="pt-6 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86]">
-        THE HIGH-TECH BUS
-      </h1>
-      <h2 className="flex gap-5 items-center pt-5 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86]">
-        <Image
-          src={"/images/arrow-right.svg"}
-          width={96}
-          height={96}
-          priority
-          alt="arrow"
-        />
-        MODERN ENTERPRISE.
-      </h2>
+      <div data-aos="fade-right">
+        <h1 className="pt-6 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-110 duration-200">
+          THE HIGH-TECH BUS
+        </h1>
+        <h2 className="flex gap-5 items-center pt-5 text-[96px] leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-110 duration-200">
+          <Image
+            src={"/images/arrow-right.svg"}
+            width={96}
+            height={96}
+            priority
+            alt="arrow"
+          />
+          MODERN ENTERPRISE.
+        </h2>
+      </div>
       <div className="grid grid-cols-2 pt-24">
-        <div className="pr-5">
+        <div data-aos="fade-right" className="pr-5">
           <p className="text-[30px] font-semibold opacity-[0.48]">
             Your Trusted Partner in Innovation with AI, Blockchain & Fintech
             Experts.

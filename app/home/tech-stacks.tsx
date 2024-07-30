@@ -107,7 +107,7 @@ const TechStacks = () => {
           research and development center
         </span>
       </div>
-      <h3 className="pt-6 text-[72px] font-bold leading-[96px] opacity-[0.86]">
+      <h3 className="pt-6 text-[72px] font-bold leading-[96px] opacity-[0.86] hover:scale-105 duration-200">
         Technical stacks
       </h3>
       <div className="flex justify-between items-end">

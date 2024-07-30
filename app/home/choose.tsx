@@ -31,7 +31,7 @@ const WhyChooseUsItem = ({ value, currentSelect, index, onHover }: Props) => {
       <div>
         <div
           className={clsx(
-            "text-[36px] font-semibold leading-[40px]",
+            "text-[36px] font-semibold leading-[40px] hover:scale-105 duration-200",
             isHover ? "text-background" : "text-white opacity-[0.86]"
           )}
         >
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
           Why aiBus is Your Partner?
         </span>
       </div>
-      <h3 className="pt-6 text-[72px] font-bold leading-[96px] opacity-[0.86]">
+      <h3 className="pt-6 text-[72px] font-bold leading-[96px] opacity-[0.86] hover:scale-105 duration-200">
         Transforms Your Business & Delivers Tangible Results
       </h3>
       <p className="pt-5 text-[18px] text-white opacity-[0.48]">

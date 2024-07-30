@@ -21,7 +21,7 @@ const Solution = () => {
         <div className="grid w-[55%] gap-[124px]">
           {solutions?.map((solution) => {
             return (
-              <div key={solution?.title}>
+              <div data-aos="fade-left" key={solution?.title}>
                 <div className="flex gap-2 items-center text-[14px] font-medium text-primary uppercase">
                   <Image
                     src={"/images/arrow-pri-right-up.svg"}
@@ -32,7 +32,7 @@ const Solution = () => {
                   />
                   {solution?.subHead}
                 </div>
-                <h3 className="pt-6 text-[48px] font-bold leading-[56px]">
+                <h3 className="pt-6 text-[48px] font-bold leading-[56px] hover:scale-105 duration-200">
                   {solution?.title}
                 </h3>
                 <p className="pt-5 text-white opacity-[0.48] leading-7">

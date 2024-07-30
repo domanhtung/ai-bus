@@ -277,3 +277,111 @@ export const whyChooseUs = [
       "Secure, scalable, and cross-platform solutions for your growing needs.",
   },
 ];
+
+export const caseStudy = {
+  mainContent: {
+    thumb: "/images/home/case_study.png",
+    subTitle: "AI Development",
+    title: "The AI-Powered Re-Staking Protocol",
+  },
+  subContent: [
+    {
+      firstContent: {
+        thumb: "/images/home/case_study.png",
+        subTitle: "Blockchain Application",
+        title: "Real-Time Price Charts",
+      },
+      secondContent: {
+        thumb: "/images/home/case_study.png",
+        subTitle: "Multifunctional of Technology",
+        title: "The Ultimate Japanese Learning Matching Platform",
+      },
+    },
+    {
+      firstContent: {
+        thumb: "/images/home/case_study.png",
+        subTitle: "Multifunctional of Technology",
+        title: "The Ultimate Japanese Learning Matching Platform",
+      },
+      secondContent: {
+        thumb: "/images/home/case_study.png",
+        subTitle: "Blockchain Application",
+        title: "Real-Time Price Charts",
+      },
+    },
+  ],
+};
+
+export const partnerList = [
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+  "/images/home/partner.png",
+];
+
+export const testimonialList = [
+  {
+    avatar: "/images/home/union.png",
+    name: "Laura Holder / CEO, Harlond inc",
+    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+  },
+  {
+    avatar: "/images/home/union.png",
+    name: "Laura Holder / CEO, Harlond inc",
+    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+  },
+  {
+    avatar: "/images/home/union.png",
+    name: "Laura Holder / CEO, Harlond inc",
+    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+  },
+  {
+    avatar: "/images/home/union.png",
+    name: "Laura Holder / CEO, Harlond inc",
+    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+  },
+];
+
+export const blogList = [
+  {
+    img: "/images/home/blog.png",
+    title: "Blockchain is Shaping the Future of Financial Services",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Author’s name",
+    date: "04/12/2024",
+  },
+  {
+    img: "/images/home/blog.png",
+    title: "Blockchain is Shaping the Future of Financial Services",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Author’s name",
+    date: "04/12/2024",
+  },
+  {
+    img: "/images/home/blog.png",
+    title: "Blockchain is Shaping the Future of Financial Services",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Author’s name",
+    date: "04/12/2024",
+  },
+];
+
+export const socialList = [
+  {
+    icon: "/images/telegram.svg",
+    link: "TELEGRAM ACC HERE",
+  },
+  {
+    icon: "/images/whatsapp.svg",
+    link: "WHATSAPP ACC HERE",
+  },
+  {
+    icon: "/images/mail.svg",
+    link: "MAIL ACC HERE",
+  },
+];

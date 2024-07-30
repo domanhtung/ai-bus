@@ -30,8 +30,8 @@ const NavName = ({ pathname, navbar }: Props) => {
       <div className="px-4 py-3">
         <div
           className={clsx(
-            "relative text-[14px] font-medium uppercase text-white cursor-pointer hover:text-primary duration-200",
-            isActive && "text-primary"
+            "relative text-[14px] font-medium uppercase cursor-pointer hover:text-primary duration-200",
+            isActive ? "text-primary" : "text-white"
           )}
         >
           {navbar?.title}

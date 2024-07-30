@@ -28,7 +28,7 @@ const About = () => {
           />
           Who we are
         </div>
-        <h3 className="max-w-[1300px] pt-6 text-[72px] leading-[96px] font-bold">
+        <h3 className="max-w-[1300px] pt-6 text-[72px] leading-[96px] font-bold hover:scale-105 duration-200">
           High-tech Bus Solutions Crafted to Streamline Your Operations and Meet
           Your Specific Needs.
         </h3>
