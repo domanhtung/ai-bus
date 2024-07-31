@@ -12,16 +12,24 @@ import Partners from "./home/partners";
 import Testimonial from "./home/testimonial";
 import Blogs from "./home/blog";
 import Contact from "./home/contact";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ContactModal from "./components/modal/contact-modal";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
+  const [showModal, setShowModal] = useState<boolean>(false);
+
   useEffect(() => {
     if (typeof document !== "undefined") {
       AOS.init();
     }
   }, []);
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
 
   return (
     <main>
@@ -35,7 +43,20 @@ export default function Home() {
       <Partners />
       <Testimonial />
       <Blogs />
-      <Contact />
+      <Contact openModal={openModal} />
+      <ContactModal isOpen={showModal} onClose={closeModal} />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </main>
   );
 }

@@ -54,8 +54,8 @@ const SectionItem = ({ value }: Props) => {
   return (
     <div className="relative p-4 bg-white bg-opacity-[0.04] group rounded-xl overflow-hidden">
       <div className="absolute hidden group-hover:block w-[32px] h-[32px] bottom-0 left-0 bg-primary rounded-full blur-xl z-0" />
-      <div className="relative">
-        <div ref={ref} className="text-[48px] font-bold leading-[56px]">
+      <div className="relative text-center lg:text-left">
+        <div ref={ref} className="text-[40px] xl:text-[48px] font-bold leading-[48px] xl:leading-[56px]">
           0
         </div>
         <div ref={currentRef} className="pt-4 font-medium opacity-[0.48]">{value?.label}</div>
@@ -66,8 +66,8 @@ const SectionItem = ({ value }: Props) => {
 
 const NumberSection = () => {
   return (
-    <div className="max-w-[1512px] mx-auto px-8 pb-14 pt-[124px]">
-      <div className="grid grid-cols-4 gap-6">
+    <div className="max-w-[1512px] mx-auto px-5 lg:px-8 pb-6 xl:pb-14 pt-14 xl:pt-[124px]">
+      <div className="grid lg:grid-cols-4 gap-3 lg:gap-6">
         {numberSection?.map((value) => {
           return <SectionItem key={value?.label} value={value} />;
         })}

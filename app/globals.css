@@ -42,6 +42,10 @@ body {
 .testimonial-swip .swiper-slide-active {
   padding: 0px 0px;
 }
+.testimonial-swip .card-testimonial {
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
 .testimonial-swip .swiper-slide-active .card-testimonial {
   background: #ff6c5c;
 }
@@ -55,6 +59,8 @@ body {
 .bg-contact {
   background-image: url("/images/home/contact.svg");
   background-color: #ff6c5c;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @keyframes animationPartner {
   from {
@@ -68,5 +74,11 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (max-width: 1023px) {
+  .testimonial-swip {
+    width: 100%;
   }
 }
