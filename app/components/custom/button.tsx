@@ -52,10 +52,10 @@ export const ButtonDefault = (props: Props) => {
       {...props}
       className={clsx(
         props?.className,
-        "relative px-4 py-3 text-[14px] font-medium bg-transparent hover:bg-transparent hover:border-primary border border-white border-opacity-[0.16] rounded-lg overflow-hidden group disabled:pointer-events-none"
+        "relative px-4 py-3 text-[14px] font-medium bg-transparent hover:bg-primary hover:border-primary border border-white border-opacity-[0.16] rounded-lg overflow-hidden group disabled:pointer-events-none"
       )}
     >
-      <span className="relative z-[1] text-white group-hover:text-primary">
+      <span className="relative z-[1] text-white group-hover:text-background">
         {props?.title}
         {props?.icon && <i className={props?.icon}></i>}
       </span>

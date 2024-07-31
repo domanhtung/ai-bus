@@ -34,7 +34,7 @@ const Solution = () => {
                     />
                     {solution?.subHead}
                   </div>
-                  <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[32px] xl:text-[48px] font-bold leading-[40px] xl:leading-[56px] hover:scale-105 duration-200">
+                  <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[32px] xl:text-[48px] font-bold leading-[40px] xl:leading-[56px] hover:pl-5 hover:scale-105 duration-200">
                     {solution?.title}
                   </h3>
                 </div>

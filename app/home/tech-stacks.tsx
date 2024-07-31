@@ -95,6 +95,14 @@ const TechStackItem = ({ tech, isShow, index, setShow }: Props) => {
 const TechStacks = () => {
   const [currentShow, setCurrentShow] = useState<number>(0);
 
+  const handleShow = (idx: number) => {
+    if (idx === currentShow) {
+      setCurrentShow(-1);
+      return;
+    }
+    setCurrentShow(idx);
+  };
+
   return (
     <div className="max-w-[1512px] mx-auto px-5 lg:px-8 pt-14 pb-14 xl:pb-24">
       <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
@@ -132,7 +140,7 @@ const TechStacks = () => {
               isShow={index === currentShow}
               index={index}
               tech={tech as any}
-              setShow={setCurrentShow}
+              setShow={handleShow}
             />
           );
         })}
