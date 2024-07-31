@@ -17,7 +17,7 @@ const Banner = () => {
           research and development center
         </span>
       </div>
-      <div data-aos="fade-right">
+      {/* <div data-aos="fade-right">
         <h1 className="pt-3 xl:pt-6 text-[7vw] leading-[7vw] lg:text-[70px] lg:leading-[70px] xl:text-[96px] xl:leading-[96px] font-extrabold text-white opacity-[0.86] hover:scale-105 duration-200">
           THE HIGH-TECH BUS
         </h1>
@@ -33,8 +33,8 @@ const Banner = () => {
           />
           MODERN ENTERPRISE.
         </h2>
-      </div>
-      {/* <div data-aos="fade-right">
+      </div> */}
+      <div data-aos="fade-right">
         <h1 className="pt-6 text-[0.8vw] font-extrabold text-white opacity-[0.86] hover:scale-105 duration-200">
           THE HIGH-TECH BUS
         </h1>
@@ -49,7 +49,7 @@ const Banner = () => {
           />
           MODERN ENTERPRISE.
         </h2>
-      </div> */}
+      </div>
       <div className="grid xl:grid-cols-2 gap-5 lg:gap-0 pt-5 lg:pt-12 xl:pt-24">
         <div data-aos="fade-right" className="pr-5">
           <p className="lg:text-[24px] xl:text-[30px] font-semibold opacity-[0.48]">
