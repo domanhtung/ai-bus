@@ -369,6 +369,20 @@ export const blogList = [
     author: "Author’s name",
     date: "04/12/2024",
   },
+  {
+    img: "/images/home/blog.png",
+    title: "Blockchain is Shaping the Future of Financial Services",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Author’s name",
+    date: "04/12/2024",
+  },
+  {
+    img: "/images/home/blog.png",
+    title: "Blockchain is Shaping the Future of Financial Services",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Author’s name",
+    date: "04/12/2024",
+  },
 ];
 
 export const socialList = [
