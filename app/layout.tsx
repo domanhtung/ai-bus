@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "AIBus",
     images: [
       {
-        url: "https://my-builder.netlify.app/images/thumbnail.png",
+        url: "https://aibus.netlify.app/images/thumbnail.png",
       },
     ],
     locale: "en_US",
