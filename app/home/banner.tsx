@@ -50,7 +50,7 @@ const Banner = () => {
           MODERN ENTERPRISE.
         </h2>
       </div>
-      <div className="grid xl:grid-cols-2 gap-5 lg:gap-0 pt-5 lg:pt-12 xl:pt-24">
+      <div className="grid lg:grid-cols-2 gap-5 lg:gap-0 pt-5 lg:pt-12 xl:pt-24">
         <div data-aos="fade-right" className="pr-5">
           <p className="lg:text-[24px] xl:text-[30px] font-semibold opacity-[0.48]">
             Your Trusted Partner in Innovation with AI, Blockchain & Fintech
