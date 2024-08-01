@@ -53,7 +53,7 @@ const Blogs = () => {
                     <div className="text-white xl:text-[18px] font-medium opacity-[0.86]">
                       {blog?.title}
                     </div>
-                    <p className="pt-2 xl:pt-4 text-[12px] font-medium text-white opacity-[0.48]">
+                    <p className="pt-2 xl:pt-4 text-[12px] font-medium text-white opacity-[0.48] limited-2-line">
                       {blog?.content}
                     </p>
                   </div>
