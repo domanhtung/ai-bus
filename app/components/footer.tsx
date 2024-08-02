@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { navbarList, socialList } from "../constants/home";
+import {
+  footerAboutList,
+  footerServiceList,
+  navbarList,
+  socialList,
+} from "../constants/home";
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,11 +22,14 @@ const Footer = () => {
           />
           <div className="grid lg:flex gap-5 mt-5 lg:mt-0 lg:gap-20 xl:gap-[124px]">
             <div>
-              {navbarList?.map((navbar) => {
+              <div className="mb-2 xl:mb-4 text-background text-[14px] uppercase font-bold">
+                SERVICES
+              </div>
+              {footerServiceList?.map((navbar) => {
                 return (
                   <div
                     key={navbar?.title}
-                    className="mb-2 xl:mb-4 text-background text-[14px] font-medium uppercase hover:text-primary"
+                    className="mb-2 xl:mb-4 text-background text-[14px] font-medium hover:text-primary capitalize"
                   >
                     <Link href={navbar?.path}>{navbar?.title}</Link>
                   </div>
@@ -29,13 +37,28 @@ const Footer = () => {
               })}
             </div>
             <div>
-              <div className="mb-2 xl:mb-4 text-background text-[14px] font-medium uppercase">
+              <div className="mb-2 xl:mb-4 text-background text-[14px] font-bold uppercase">
+                about us
+              </div>
+              {footerAboutList?.map((navbar) => {
+                return (
+                  <div
+                    key={navbar?.title}
+                    className="mb-2 xl:mb-4 text-background text-[14px] font-medium hover:text-primary capitalize"
+                  >
+                    <Link href={navbar?.path}>{navbar?.title}</Link>
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              <div className="mb-2 xl:mb-4 text-background text-[14px] font-bold uppercase">
                 CONTACTS
               </div>
               {socialList?.map((social, index) => {
                 return (
-                  <Link key={index} href={social?.link}>
-                    <div className="flex mb-2 xl:mb-4 items-center gap-4 text-background text-[14px] font-medium uppercase hover:text-primary">
+                  <Link key={index} href={social?.link} target={"_blank"}>
+                    <div className="flex mb-2 xl:mb-4 items-center gap-4 text-background text-[14px] font-medium hover:text-primary capitalize">
                       <Image
                         src={social?.icon}
                         className="min-w-[20px]"
@@ -44,7 +67,7 @@ const Footer = () => {
                         priority
                         alt="social"
                       />
-                      {social?.link}
+                      {social?.name}
                     </div>
                   </Link>
                 );

@@ -25,6 +25,44 @@ export const navbarList = [
   },
 ];
 
+export const footerServiceList = [
+  {
+    title: "ai-powered solution",
+    path: "",
+  },
+  {
+    title: "web3 development",
+    path: "",
+  },
+  {
+    title: "fin-tech innovations",
+    path: "",
+  },
+  {
+    title: "case study",
+    path: "",
+  },
+];
+
+export const footerAboutList = [
+  {
+    title: "Careers",
+    path: "",
+  },
+  {
+    title: "Blogs",
+    path: "",
+  },
+  {
+    title: "privacy policy",
+    path: "",
+  },
+  {
+    title: "security policy",
+    path: "",
+  },
+];
+
 export const solutions = [
   {
     subHead: "AI-powered solutions",
@@ -395,14 +433,22 @@ export const blogList = [
 export const socialList = [
   {
     icon: "/images/telegram.svg",
-    link: "TELEGRAM ACC HERE",
+    name: "+84 33 777 8715",
+    link: "https://t.me/mira_nguyen",
   },
   {
     icon: "/images/whatsapp.svg",
-    link: "WHATSAPP ACC HERE",
+    name: "+84 33 777 8715",
+    link: "",
   },
   {
     icon: "/images/mail.svg",
-    link: "MAIL ACC HERE",
+    name: "hello@aibus.dev",
+    link: "",
+  },
+  {
+    icon: "/images/linkedin.svg",
+    name: "@aibusdev",
+    link: "https://www.linkedin.com/company/aibusdev",
   },
 ];
