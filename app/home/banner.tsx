@@ -65,7 +65,7 @@ const Banner = () => {
           className="w-[40.7%] h-auto overflow-hidden"
           width={720}
           height={560}
-          priority
+          // priority
           alt="banner hero"
         />
       </div>
