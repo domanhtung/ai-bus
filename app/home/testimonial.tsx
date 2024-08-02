@@ -36,7 +36,7 @@ const Testimonial = () => {
               />
               <ButtonDefault
                 icon="fa fa-angle-right"
-                className="swiper-button swiper-button-prev testimonial-button-next w-[48px] h-[48px] text-[20px] leading-[20px]"
+                className="swiper-button ml-4 lg:ml-0 swiper-button-prev testimonial-button-next w-[48px] h-[48px] text-[20px] leading-[20px]"
               />
             </div>
           </div>

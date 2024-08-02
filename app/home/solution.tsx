@@ -1,22 +1,27 @@
+"use client";
 import Image from "next/image";
 import { solutions } from "../constants/home";
 import { ButtonSecondary } from "../components/custom/button";
 import Link from "next/link";
 import clsx from "clsx";
+import Lottie from "react-lottie";
+import loadingJson from "../../public/AIbus-services.json";
+import { useMemo } from "react";
 
 const Solution = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: loadingJson,
+  };
+
   return (
     <section className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 lg:py-24">
       <div className="grid lg:flex gap-5 lg:gap-0 xl:py-24">
         <div className="lg:w-[45%] lg:pr-14">
-          <Image
-            src={"/images/home/solution_image.png"}
-            className="solution-img w-full h-auto border border-white rounded-xl bg-white overflow-hidden"
-            width={560}
-            height={600}
-            priority
-            alt="solution"
-          />
+          <div className="solution-img w-full h-auto overflow-hidden">
+            <Lottie options={defaultOptions} />
+          </div>
         </div>
         <div className="grid lg:w-[55%] gap-16 lg:gap-[124px] overflow-hidden">
           {solutions?.map((solution, index) => {
