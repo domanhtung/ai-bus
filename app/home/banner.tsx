@@ -25,7 +25,6 @@ const Banner = () => {
           <Image
             src={"/images/arrow-right.svg"}
             className="w-[7vw] h-[7vw] lg:w-[96px] lg:h-[96px]"
-
             width={96}
             height={96}
             priority
@@ -50,8 +49,8 @@ const Banner = () => {
           MODERN ENTERPRISE.
         </h2>
       </div> */}
-      <div className="grid lg:grid-cols-2 gap-5 lg:gap-0 pt-5 lg:pt-12 xl:pt-24">
-        <div data-aos="fade-right" className="pr-5">
+      <div className="flex gap-5 lg:gap-0 pt-5 lg:pt-12 xl:pt-24">
+        <div data-aos="fade-right" className="w-[59.3%] pr-14">
           <p className="lg:text-[24px] xl:text-[30px] font-semibold opacity-[0.48]">
             Your Trusted Partner in Innovation with AI, Blockchain & Fintech
             Experts.
@@ -63,7 +62,7 @@ const Banner = () => {
         </div>
         <Image
           src={"/images/home/hero_image.png"}
-          className="w-full h-auto border border-white border-opacity-10 rounded-xl overflow-hidden"
+          className="w-[40.7%] h-auto overflow-hidden"
           width={720}
           height={560}
           priority
