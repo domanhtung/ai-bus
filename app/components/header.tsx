@@ -4,8 +4,9 @@ import Link from "next/link";
 import { navbarList } from "../constants/home";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import { ButtonPrimary } from "./custom/button";
+import { ContactContext } from "../context/contact-context";
 
 interface Props {
   pathname: string;
@@ -54,6 +55,7 @@ const NavName = ({ pathname, navbar }: Props) => {
 
 const Header = () => {
   const pathname = usePathname();
+  const { showContact } = useContext(ContactContext);
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
 
   return (
@@ -80,7 +82,7 @@ const Header = () => {
                 );
               })}
             </div>
-            <ButtonPrimary title="GET IN TOUCH" />
+            <ButtonPrimary title="GET IN TOUCH" onClick={() => showContact()} />
           </div>
           <div
             className="grid lg:hidden gap-1 p-2 border border-primary rounded-md cursor-pointer"
@@ -108,7 +110,7 @@ const Header = () => {
               />
             );
           })}
-          <ButtonPrimary title="GET IN TOUCH" />
+          <ButtonPrimary title="GET IN TOUCH" onClick={() => showContact()} />
         </div>
       </div>
     </div>

@@ -3,8 +3,9 @@ import Image from "next/image";
 import { ButtonSecondary } from "../components/custom/button";
 import Link from "next/link";
 import { techStacks } from "../constants/home";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import clsx from "clsx";
+import { ContactContext } from "../context/contact-context";
 
 interface TechList {
   name: string;
@@ -93,6 +94,7 @@ const TechStackItem = ({ tech, isShow, index, setShow }: Props) => {
 };
 
 const TechStacks = () => {
+  const { showContact } = useContext(ContactContext);
   const [currentShow, setCurrentShow] = useState<number>(0);
 
   const handleShow = (idx: number) => {
@@ -129,7 +131,10 @@ const TechStacks = () => {
           your projects.
         </p>
         <Link href={""}>
-          <ButtonSecondary title="Meet our Experts" />
+          <ButtonSecondary
+            title="Meet our Experts"
+            onClick={() => showContact()}
+          />
         </Link>
       </div>
       <div className="grid mt-10 lg:pt-[72px]">

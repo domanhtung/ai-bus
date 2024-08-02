@@ -4,10 +4,12 @@ import { aboutSection } from "../constants/home";
 import { EyeActive, EyeInActive } from "../components/svg/eye";
 import { ButtonSecondaryDark } from "../components/custom/button";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import clsx from "clsx";
+import { ContactContext } from "../context/contact-context";
 
 const About = () => {
+  const { showContact } = useContext(ContactContext);
   const [currentSelect, setCurrentSelect] = useState<number>(0);
 
   const onHover = (index: number) => {
@@ -48,7 +50,10 @@ const About = () => {
               </div>
               <div className="flex">
                 <Link href={""}>
-                  <ButtonSecondaryDark title="Meet the team" />
+                  <ButtonSecondaryDark
+                    title="Meet the team"
+                    onClick={() => showContact()}
+                  />
                 </Link>
               </div>
             </div>

@@ -1,11 +1,11 @@
-import Image from "next/image";
+"use client";
+import { useContext } from "react";
 import { ButtonPrimary } from "../components/custom/button";
+import { ContactContext } from "../context/contact-context";
 
-interface Props {
-  openModal: () => void;
-}
+const Contact = () => {
+  const { showContact } = useContext(ContactContext);
 
-const Contact = ({ openModal }: Props) => {
   return (
     <div className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 xl:py-24">
       <div className="bg-contact lg:flex lg:h-[180px] xl:h-[240px] py-5 px-5 lg:px-12 xl:px-24 items-center justify-between rounded-xl">
@@ -15,7 +15,7 @@ const Contact = ({ openModal }: Props) => {
         <ButtonPrimary
           title="Contact us"
           className="border border-background"
-          onClick={() => openModal()}
+          onClick={() => showContact()}
         />
       </div>
     </div>

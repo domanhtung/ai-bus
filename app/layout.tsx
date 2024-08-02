@@ -5,12 +5,14 @@ import "./globals.css";
 import Header from "./components/header";
 import clsx from "clsx";
 import Footer from "./components/footer";
+import { ContactContextProvider } from "./context/contact-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AIBus",
-  description: "Your Trusted Partner in Innovation with AI, Blockchain & Fintech Experts.",
+  description:
+    "Your Trusted Partner in Innovation with AI, Blockchain & Fintech Experts.",
   openGraph: {
     title: "AIBus",
     description:
@@ -45,9 +47,11 @@ export default function RootLayout({
         />
       </head>
       <body className={clsx(inter.className, "bg-background")}>
-        <Header />
-        {children}
-        <Footer />
+        <ContactContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ContactContextProvider>
       </body>
     </html>
   );
