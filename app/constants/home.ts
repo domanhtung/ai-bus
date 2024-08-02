@@ -46,22 +46,22 @@ export const solutions = [
       "Stay ahead with our cutting-edge Web3 development services, incorporating the latest blockchain technologies and crypto trends. Our expertise spans the entire Web3 development life-cycle, ensuring seamless and secure transformation from traditional to decentralized solutions.",
     list: [
       "PoC & MVP Development",
-      "DeFi Solutions",
       "dApp Development",
+      "DeFi Solutions",
       "Web3 Transformation",
     ],
     link: "",
   },
   {
-    subHead: "fin-tech innovations",
-    title: "A Leading Innovator in AI Development",
+    subHead: "fintech innovations",
+    title: "Financial Innovation with AI & Blockchain",
     content:
-      "Leverage our expertise to design, develop, and deploy AI applications that revolutionize your business and deliver measurable results. We offer top solutions in Machine Learning, Generative AI, Visual Recognition, and Natural Language Processing.",
+      "Harnessing the power of AI and blockchain, we craft groundbreaking financial solutions that drive efficiency, enhance security, and transform traditional processes. Our expertise in fintech technology ensures that your business stays ahead in the evolving financial landscape.",
     list: [
-      "Machine Learning",
-      "Generative AI Applications",
-      "Visual Recognition",
-      "Natural Language",
+      "Payment & Wallets",
+      "Lending Platforms",
+      "DeFi & CeFi Solutions",
+      "Personalized Financial",
     ],
     link: "",
   },
@@ -88,15 +88,15 @@ export const numberSection = [
     label: "Happy clients",
   },
   {
-    count: 24,
+    count: 49,
     label: "Finished projects",
   },
   {
-    count: 32,
+    count: 35,
     label: "Skilled Experts",
   },
   {
-    count: 6,
+    count: 8,
     label: "Countries",
   },
 ];
@@ -332,8 +332,8 @@ export const testimonialList = [
   },
   {
     avatar: "/images/home/union.png",
-    name: "Laura Holder / CEO, Harlond inc",
-    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+    name: "Mike Clay / COO, Forest Finance jsc",
+    des: "Their team provided innovative solutions and managed every aspect of our software project with professionalism and efficiency.",
   },
   {
     avatar: "/images/home/union.png",
@@ -342,8 +342,8 @@ export const testimonialList = [
   },
   {
     avatar: "/images/home/union.png",
-    name: "Laura Holder / CEO, Harlond inc",
-    des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
+    name: "Mike Clay / COO, Forest Finance jsc",
+    des: "Their team provided innovative solutions and managed every aspect of our software project with professionalism and efficiency.",
   },
 ];
 
@@ -352,35 +352,42 @@ export const blogList = [
     img: "/images/home/blog.png",
     title: "Blockchain is Shaping the Future of Financial Services",
     content: "Add short description about the article here, maximum is 2 lines",
-    author: "Author’s name",
+    author: "Mira",
+    date: "04/12/2024",
+  },
+  {
+    img: "/images/home/blog.png",
+    title: "How AI is Transforming Business Operations in 2024?",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Mira",
+    date: "04/12/2024",
+  },
+  {
+    img: "/images/home/blog.png",
+    title: "Best Practices for Remote Software Development Team",
+    content: "Add short description about the article here, maximum is 2 lines",
+    author: "Mira",
     date: "04/12/2024",
   },
   {
     img: "/images/home/blog.png",
     title: "Blockchain is Shaping the Future of Financial Services",
     content: "Add short description about the article here, maximum is 2 lines",
-    author: "Author’s name",
+    author: "Mira",
     date: "04/12/2024",
   },
   {
     img: "/images/home/blog.png",
-    title: "Blockchain is Shaping the Future of Financial Services",
+    title: "How AI is Transforming Business Operations in 2024?",
     content: "Add short description about the article here, maximum is 2 lines",
-    author: "Author’s name",
+    author: "Mira",
     date: "04/12/2024",
   },
   {
     img: "/images/home/blog.png",
-    title: "Blockchain is Shaping the Future of Financial Services",
+    title: "Best Practices for Remote Software Development Team",
     content: "Add short description about the article here, maximum is 2 lines",
-    author: "Author’s name",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "Blockchain is Shaping the Future of Financial Services",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Author’s name",
+    author: "Mira",
     date: "04/12/2024",
   },
 ];
