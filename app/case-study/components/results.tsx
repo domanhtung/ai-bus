@@ -10,7 +10,7 @@ const TheResultCaseStudy = () => {
         <div className="flex justify-end">
           <div className="max-w-[662px]">
             <p className="opacity-[0.48]">
-              The project's amazing success may be attributed to its lifelike
+              The project&apos;s amazing success may be attributed to its lifelike
               visualizations, which increased user engagement by 400% and
               conversion rates by 500%. We exceeded quality standards and
               budgetary limits by delivering the MVP and proof of concept in
