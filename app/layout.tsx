@@ -6,6 +6,7 @@ import Header from "./components/header";
 import clsx from "clsx";
 import Footer from "./components/footer";
 import { ContactContextProvider } from "./context/contact-context";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +51,18 @@ export default function RootLayout({
         <ContactContextProvider>
           <Header />
           {children}
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
           <Footer />
         </ContactContextProvider>
       </body>

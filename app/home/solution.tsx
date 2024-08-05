@@ -6,7 +6,6 @@ import Link from "next/link";
 import clsx from "clsx";
 import Lottie from "react-lottie";
 import loadingJson from "../../public/AIbus-services.json";
-import { useMemo } from "react";
 
 const Solution = () => {
   const defaultOptions = {
