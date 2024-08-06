@@ -5,7 +5,7 @@ import { Navigation, EffectCoverflow, Autoplay } from "swiper/modules";
 
 const Blogs = () => {
   return (
-    <div className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 xl:py-24">
+    <div className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 xl:py-24">
       <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
         <Image
           src={"/images/arrow-right-up.svg"}

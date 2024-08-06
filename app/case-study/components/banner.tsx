@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BannerHeroCaseStudy = () => {
   return (
-    <section className="pb-24 pt-8 max-w-[1512px] px-8 mx-auto">
+    <section className="pb-24 pt-8 max-w-[1512px] px-4 lg:px-8 mx-auto">
       <Image
         src={"/images/case_study/hero_img.svg"}
         className="w-full h-auto rounded-xl"
@@ -11,7 +11,7 @@ const BannerHeroCaseStudy = () => {
         priority
         alt="hero banner"
       />
-      <div className="pt-[72px]">
+      <div className="pt-10 lg:pt-[72px]">
         <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
           <Image
             src={"/images/arrow-right-up.svg"}
@@ -25,9 +25,9 @@ const BannerHeroCaseStudy = () => {
             research and development center
           </span>
         </div>
-        <div className="grid grid-cols-2 pt-6 items-end">
+        <div className="grid lg:grid-cols-2 pt-6 items-end">
           <div>
-            <h1 className="text-[96px] leading-[96px] font-[800] opacity-[0.86] hover:scale-105 duration-200">
+            <h1 className="text-[14vw] leading-[14vw] lg:text-[96px] lg:leading-[96px] font-[800] opacity-[0.86] hover:scale-105 duration-200">
               MateriView
             </h1>
             <p className="max-w-[662px] pt-5 opacity-[0.48]">
@@ -36,8 +36,8 @@ const BannerHeroCaseStudy = () => {
               effortlessly replacing them with new patterns.
             </p>
           </div>
-          <div className="flex justify-end">
-            <div className="w-full max-w-[662px] grid grid-cols-4 gap-4 justify-end">
+          <div className="lg:flex mt-10 lg:mt-0 justify-end">
+            <div className="w-full max-w-[662px] grid lg:grid-cols-4 gap-4 justify-end">
               <div>
                 <div className="text-[12px] font-medium opacity-[0.48]">
                   Industry
@@ -46,7 +46,7 @@ const BannerHeroCaseStudy = () => {
                   AI Architecture
                 </div>
               </div>
-              <div className="col-span-3">
+              <div className="lg:col-span-3">
                 <div className="text-[12px] font-medium opacity-[0.48]">
                   Services
                 </div>
@@ -60,7 +60,7 @@ const BannerHeroCaseStudy = () => {
                 </div>
                 <div className="pt-2 font-medium opacity-[0.86]">Startup</div>
               </div>
-              <div className="col-span-3">
+              <div className="lg:col-span-3">
                 <div className="text-[12px] font-medium opacity-[0.48]">
                   Build your idea
                 </div>

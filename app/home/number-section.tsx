@@ -66,7 +66,7 @@ const SectionItem = ({ value }: Props) => {
 
 const NumberSection = () => {
   return (
-    <div className="max-w-[1512px] mx-auto px-5 lg:px-8 pb-6 xl:pb-14 pt-14 xl:pt-[124px]">
+    <div className="max-w-[1512px] mx-auto px-4 lg:px-8 pb-6 xl:pb-14 pt-14 xl:pt-[124px]">
       <div className="grid lg:grid-cols-4 gap-3 lg:gap-6">
         {numberSection?.map((value) => {
           return <SectionItem key={value?.label} value={value} />;

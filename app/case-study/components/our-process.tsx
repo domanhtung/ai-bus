@@ -7,12 +7,12 @@ import { ourProcess } from "@/app/constants/case-study";
 
 const OurProcessCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-8 py-24">
-      <div className="flex items-center justify-between">
-        <h2 className="text-[48px] font-bold leading-[56px] hover:scale-105 duration-200">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
+      <div className="lg:flex items-center justify-between">
+        <h2 className="text-[30px] lg:text-[48px] font-bold leading-[46px] lg:leading-[56px] hover:scale-105 duration-200">
           Our Process
         </h2>
-        <div className="lg:flex gap-4 justify-end">
+        <div className="lg:flex mt-5 lg:mt-0 gap-4 justify-end">
           <ButtonDefault
             icon="fa fa-angle-left"
             className="swiper-button swiper-button-prev process-button-prev w-[48px] h-[48px] text-[20px] leading-[20px]"
@@ -23,7 +23,7 @@ const OurProcessCaseStudy = () => {
           />
         </div>
       </div>
-      <div className="pt-[72px]">
+      <div className="mt-8 lg:pt-[72px]">
         <Swiper
           slidesPerView={1}
           loop

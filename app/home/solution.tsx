@@ -18,7 +18,7 @@ const Solution = () => {
     <section className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 lg:py-24">
       <div className="grid lg:flex gap-5 lg:gap-0 xl:py-24">
         <div className="lg:w-[45%] lg:pr-14">
-          <div className="solution-img w-full h-auto overflow-hidden">
+          <div className="solution-img w-full max-w-[265px] lg:max-w-full h-auto overflow-hidden">
             <Lottie options={defaultOptions} />
           </div>
         </div>
@@ -44,9 +44,9 @@ const Solution = () => {
                 </div>
                 <p
                   data-aos="fade-left"
-                  className="pt-3 xl:pt-5 text-white opacity-[0.48] leading-7"
+                  className="pt-3 xl:pt-5 text-white leading-7"
                 >
-                  {solution?.content}
+                  <span className="opacity-[0.48]">{solution?.content}</span>
                 </p>
                 <div className="py-6">
                   {solution?.list?.map((value, index) => {

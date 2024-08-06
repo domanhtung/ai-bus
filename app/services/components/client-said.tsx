@@ -8,7 +8,7 @@ import { clientSaidService } from "@/app/constants/service";
 const ClientSaid = () => {
   return (
     <section className="py-24 max-w-[1512px] px-8 mx-auto">
-      <div className="flex gap-3 justify-between">
+      <div className="lg:flex gap-3 justify-between">
         <div className="w-full max-w-[1264px]">
           <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
             <Image
@@ -34,7 +34,7 @@ const ClientSaid = () => {
             of offering a definitive value to your business.
           </p>
         </div>
-        <div className="flex items-end">
+        <div className="flex items-end mt-5 lg:mt-0">
           <div className="lg:flex gap-4 justify-end">
             <ButtonDefault
               icon="fa fa-angle-left"
@@ -66,7 +66,7 @@ const ClientSaid = () => {
           {clientSaidService?.map((value, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
+                <div className="h-[350px] lg:h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
                   <div className="flex-1">
                     <Image
                       src={value?.img}
@@ -86,10 +86,10 @@ const ClientSaid = () => {
                     />
                   </div>
                   <div>
-                    <p className="font-medium text-[36px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
+                    <p className="font-medium text-[30px] lg:text-[36px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
                       {value?.title}
                     </p>
-                    <p className="pt-4 text-white text-[18px] opacity-[0.48] group-hover:text-background group-hover:opacity-100">
+                    <p className="pt-4 text-white lg:text-[18px] opacity-[0.48] group-hover:text-background group-hover:opacity-100">
                       {value?.content}
                     </p>
                   </div>

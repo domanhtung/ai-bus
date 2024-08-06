@@ -12,9 +12,17 @@ import ClientSaid from "./components/client-said";
 import TechStackService from "./components/tech-stack";
 import Blogs from "../home/blog";
 import Contact from "../home/contact";
-import { ToastContainer } from "react-toastify";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      AOS.init();
+    }
+  }, []);
+
   return (
     <main>
       <HeroBanner />

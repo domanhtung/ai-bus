@@ -8,7 +8,7 @@ import { testimonialList } from "../constants/home";
 const Testimonial = () => {
   return (
     <div className="overflow-hidden">
-      <div className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 lg:py-24">
+      <div className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
         <div className="lg:flex gap-6">
           <div className="relative flex flex-col lg:w-[400px] lg:min-w-[400px] xl:w-[588px] xl:min-w-[588px] h-[200px] lg:h-[440px] z-10">
             <div className="flex-1">

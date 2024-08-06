@@ -17,7 +17,7 @@ const MoreCaseStudy = () => {
         />
         <span className="text-white opacity-[0.48]">WE Deliver Excellence</span>
       </div>
-      <h3 className="pt-6 text-[48px] leading-[56px] font-bold opacity-[0.86] hover:scale-105 duration-200">
+      <h3 className="pt-6 text-[30px] lg:text-[48px] leading-[46px] lg:leading-[56px] font-bold opacity-[0.86] hover:scale-105 duration-200">
         More case studies
       </h3>
       <div className="w-full">

@@ -85,12 +85,12 @@ const Header = () => {
             <ButtonPrimary title="GET IN TOUCH" onClick={() => showContact()} />
           </div>
           <div
-            className="grid lg:hidden gap-1 p-2 border border-primary rounded-md cursor-pointer"
+            className="grid lg:hidden gap-[7px] p-2 cursor-pointer"
             onClick={() => setShowNavbar(!showNavbar)}
           >
-            <div className="w-[20px] h-[3px] bg-primary rounded-sm" />
-            <div className="w-[20px] h-[3px] bg-primary rounded-sm" />
-            <div className="w-[20px] h-[3px] bg-primary rounded-sm" />
+            <div className="w-[24px] h-[3px] bg-primary" />
+            <div className="w-[24px] h-[3px] bg-primary" />
+            <div className="w-[24px] h-[3px] bg-primary" />
           </div>
         </div>
       </div>

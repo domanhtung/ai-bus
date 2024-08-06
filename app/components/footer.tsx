@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid lg:flex justify-between items-start">
           <Image
             src={"/images/logo_light.svg"}
-            className="w-[132px] h-[44px] xl:w-[240px] xl:h-[64px]"
+            className="w-full max-w-[240px] lg:max-w-full h-auto xl:w-[240px] xl:h-[64px]"
             width={240}
             height={64}
             priority

@@ -12,8 +12,17 @@ import WhatWeDidCaseStudy from "./components/what-we-did";
 import TheResultCaseStudy from "./components/results";
 import MasteriviewSaidCaseStudy from "./components/masteriview-said";
 import KickstartCaseStudy from "./components/kickstart";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const CaseStudy = () => {
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      AOS.init();
+    }
+  }, []);
+
   return (
     <main>
       <BannerHeroCaseStudy />

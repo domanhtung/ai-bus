@@ -26,7 +26,14 @@ body {
   position: sticky;
   top: 96px;
 }
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
 
+.no-scroll {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 .animation-partner {
   width: fit-content;
   animation: animationPartner 25s linear infinite;

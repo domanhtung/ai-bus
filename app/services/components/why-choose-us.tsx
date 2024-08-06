@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const WhyChooseUsService = () => {
   return (
-    <section className="py-24 max-w-[1512px] px-8 mx-auto">
-      <h2 className="max-w-[1200px] text-[72px] font-bold hover:scale-105 duration-200">
+    <section className="py-12 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto">
+      <h2 className="max-w-[1200px] text-[42px] lg:text-[72px] font-bold hover:scale-105 duration-200">
         Why Choose Us as Your Artificial Intelligence Development Team?
       </h2>
-      <p className="pt-5 text-[18px] text-white opacity-[0.48]">
+      <p className="pt-5 lg:text-[18px] text-white opacity-[0.48]">
         Being among the committed AI service providers, we use our broad domain
         knowledge to challenge your company&apos;s limits. Our AI app
         development services are meant to generate real outcomes and release
         artificial intelligence&apos;s whole potential.
       </p>
-      <div className="grid grid-cols-2 pt-[72px]">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-0 pt-10 lg:pt-[72px] overflow-hidden">
         <div>
           <Image
             src={"/images/service/why_choose.png"}
@@ -27,7 +27,7 @@ const WhyChooseUsService = () => {
         <div>
           {whyChooseUsService?.map((value, index) => {
             return (
-              <div key={index}>
+              <div key={index} data-aos="fade-left">
                 <div className="font-medium text-[18px] text-white opacity-[0.86]">
                   {value?.title}
                 </div>
