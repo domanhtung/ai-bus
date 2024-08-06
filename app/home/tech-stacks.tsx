@@ -68,13 +68,13 @@ const TechStackItem = ({ tech, isShow, index, setShow }: Props) => {
                   <div className="lg:pl-9 xl:pl-[72px] text-[16px] xl:text-[18px]">
                     {value?.name}
                   </div>
-                  <div className="flex gap-3 lg:gap-5 items-center flex-wrap lg:flex-nowrap">
+                  <div className="flex max-w-[900px] gap-3 lg:gap-5 items-center justify-end flex-wrap">
                     {value?.logos?.map((logo, index) => {
                       return (
                         <Image
                           key={index}
                           src={logo}
-                          className="w-[120px] h-[58px] xl:w-[156px] xl:h-[68px] bg-white bg-opacity-[0.04] rounded-lg object-contain"
+                          className="w-fit h-[44px] xl:h-[68px] object-contain grayscale hover:grayscale-0"
                           width={156}
                           height={68}
                           priority
