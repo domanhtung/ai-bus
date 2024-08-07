@@ -390,7 +390,7 @@ export const quotesService = [
   "Turning Concepts into Smart Solutions.",
   "Pioneering AI Solutions for Your Success.",
   "Custom AI Tools Aligned with Your Ambitions.",
-  "Beyond the horizon, beyond the known, we push the limits of artificial intelligence.",
+  "Beyond the horizon, beyond the known.\nwe push the limits of artificial intelligence.",
 ];
 
 export const serveService = [
