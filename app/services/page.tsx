@@ -14,9 +14,34 @@ import Blogs from "../home/blog";
 import Contact from "../home/contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { solutionServiceByKey, solutionServiceKey } from "../constants/service";
 import { useSearchParams } from "next/navigation";
+
+interface Props {
+  currentSolutions: any;
+}
+
+const ServiceComponent = ({ currentSolutions }: Props) => {
+  return (
+    <div>
+      <HeroBanner
+        title={currentSolutions?.title}
+        subTitle={currentSolutions?.subTitle}
+      />
+      <SolutionService solutionList={currentSolutions?.contents} />
+      <ServeService />
+      <FutureService />
+      <WhyChooseUsService />
+      <ConsultantsService />
+      <DeliverExcellence />
+      <ClientSaid />
+      <TechStackService />
+      <Blogs />
+      <Contact />
+    </div>
+  );
+};
 
 const Services = () => {
   const searchParams = useSearchParams();
@@ -40,20 +65,9 @@ const Services = () => {
 
   return (
     <main>
-      <HeroBanner
-        title={currentSolutions?.title}
-        subTitle={currentSolutions?.subTitle}
-      />
-      <SolutionService solutionList={currentSolutions?.contents} />
-      <ServeService />
-      <FutureService />
-      <WhyChooseUsService />
-      <ConsultantsService />
-      <DeliverExcellence />
-      <ClientSaid />
-      <TechStackService />
-      <Blogs />
-      <Contact />
+      <Suspense fallback={null}>
+        <ServiceComponent currentSolutions={currentSolutions} />
+      </Suspense>
     </main>
   );
 };
