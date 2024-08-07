@@ -2,20 +2,40 @@ export const ourProcess = [
   {
     img: "/images/service/client_said.svg",
     imgHover: "/images/service/client_said_hover.svg",
+    title: "Discovery",
+    content: ["Market understanding, Competitive Analysis", "User Interview"],
+  },
+  {
+    img: "/images/service/client_said.svg",
+    imgHover: "/images/service/client_said_hover.svg",
+    title: "R&D",
+    content: [
+      "Research and build model",
+      "Customize model",
+      "Image processing",
+    ],
+  },
+  {
+    img: "/images/service/client_said.svg",
+    imgHover: "/images/service/client_said_hover.svg",
+    title: "Design",
+    content: [
+      "Create wire-frame & UI design",
+      "Clarify user requirement",
+      "Architecture design",
+    ],
+  },
+  {
+    img: "/images/service/client_said.svg",
+    imgHover: "/images/service/client_said_hover.svg",
     title: "Development",
-    content: ["Android, iOS Development", "User Testing"],
+    content: ["Implement source code", "Unit test & Integration test", "Report and improvement"],
   },
   {
     img: "/images/service/client_said.svg",
     imgHover: "/images/service/client_said_hover.svg",
     title: "Deployment",
-    content: ["App Store & Play Store Deployment", "Post-launch Maintenance"],
-  },
-  {
-    img: "/images/service/client_said.svg",
-    imgHover: "/images/service/client_said_hover.svg",
-    title: "Conceptualization",
-    content: ["Market understanding", "Competitive Analysis", "User Interview"],
+    content: ["Setup CI/CD", "Staging environment", "Deployment guideline"],
   },
 ];
 
@@ -40,7 +60,7 @@ export const resultsCaseStudy = [
 
 export const masteriviewSaid = {
   img: "/images/service/client_said_hover.svg",
-  name: "Laura Holder / CEO, Harlond inc",
+  name: "Justin Le / CTO, Speedhome inc",
   comment:
-    "good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, good job, ",
+    "I am incredibly proud of our AIBus development team for their outstanding work on MateriView. Your dedication to researching and developing the MVP has truly paid off, and the success of the demo to our investors is a testament to your talent and hard work. Thank you for your unwavering commitment and innovation. This achievement marks a significant milestone for our company, and it wouldn't have been possible without each of you.",
 };

@@ -1,4 +1,5 @@
 const ProjectChallengeCaseStudy = () => {
+  return null;
   return (
     <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
       <div className="grid lg:grid-cols-2 gap-5 lg:gap-0 overflow-hidden">
