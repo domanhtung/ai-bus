@@ -14,19 +14,37 @@ import Blogs from "../home/blog";
 import Contact from "../home/contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { solutionServiceByKey, solutionServiceKey } from "../constants/service";
+import { useSearchParams } from "next/navigation";
 
 const Services = () => {
+  const searchParams = useSearchParams();
+  const [currentSolutions, setCurrentSolutions] = useState(
+    solutionServiceByKey?.[solutionServiceKey.ai_solution]
+  );
+
+  const searchId = searchParams.get("service");
+
   useEffect(() => {
     if (typeof document !== "undefined") {
       AOS.init();
     }
   }, []);
 
+  useEffect(() => {
+    const currentResult =
+      solutionServiceByKey?.[searchId || solutionServiceKey.ai_solution];
+    setCurrentSolutions(currentResult);
+  }, [searchId]);
+
   return (
     <main>
-      <HeroBanner />
-      <SolutionService />
+      <HeroBanner
+        title={currentSolutions?.title}
+        subTitle={currentSolutions?.subTitle}
+      />
+      <SolutionService solutionList={currentSolutions?.contents} />
       <ServeService />
       <FutureService />
       <WhyChooseUsService />

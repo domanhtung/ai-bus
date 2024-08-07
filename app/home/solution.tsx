@@ -15,14 +15,14 @@ const Solution = () => {
   };
 
   return (
-    <section className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 lg:py-24">
+    <section className="max-w-[1512px] mx-auto px-5 lg:px-8 py-12 lg:py-24 overflow-hidden lg:overflow-visible">
       <div className="grid lg:flex gap-5 lg:gap-0 xl:py-24">
         <div className="lg:w-[45%] lg:pr-14">
           <div className="solution-img w-full max-w-[265px] lg:max-w-full h-auto overflow-hidden">
             <Lottie options={defaultOptions} />
           </div>
         </div>
-        <div className="grid lg:w-[55%] gap-16 lg:gap-[124px] overflow-hidden">
+        <div className="grid lg:w-[55%] gap-16 lg:gap-[124px] lg:overflow-hidden">
           {solutions?.map((solution, index) => {
             return (
               <div key={index}>
@@ -38,7 +38,7 @@ const Solution = () => {
                     />
                     {solution?.subHead}
                   </div>
-                  <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[32px] xl:text-[48px] font-bold leading-[40px] xl:leading-[56px] hover:pl-5 hover:scale-105 duration-200">
+                  <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[32px] xl:text-[48px] font-bold leading-[40px] xl:leading-[56px] lg:hover:pl-5 hover:scale-105 duration-200">
                     {solution?.title}
                   </h3>
                 </div>

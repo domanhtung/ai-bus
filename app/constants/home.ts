@@ -1,3 +1,5 @@
+import { solutionServiceKey } from "./service";
+
 export const navbarList = [
   {
     title: "Home",
@@ -65,6 +67,7 @@ export const footerAboutList = [
 
 export const solutions = [
   {
+    key: solutionServiceKey.ai_solution,
     subHead: "AI-powered solutions",
     title: "A Leading Innovator in AI Development",
     content:
@@ -75,9 +78,10 @@ export const solutions = [
       "Visual Recognition",
       "Natural Language",
     ],
-    link: "",
+    link: `/services?service=${solutionServiceKey.ai_solution}`,
   },
   {
+    key: solutionServiceKey.web3_solution,
     subHead: "web3 development",
     title: "Transforming the Future with Web3 Solutions",
     content:
@@ -88,9 +92,10 @@ export const solutions = [
       "DeFi Solutions",
       "Web3 Transformation",
     ],
-    link: "",
+    link: `/services?service=${solutionServiceKey.web3_solution}`,
   },
   {
+    key: solutionServiceKey.financial_innovation,
     subHead: "fintech innovations",
     title: "Financial Innovation with AI & Blockchain",
     content:
@@ -101,7 +106,7 @@ export const solutions = [
       "DeFi & CeFi Solutions",
       "Personalized Financial",
     ],
-    link: "",
+    link: `/services?service=${solutionServiceKey.financial_innovation}`,
   },
 ];
 

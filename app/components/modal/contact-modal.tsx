@@ -34,7 +34,6 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
       return;
     }
     try {
-      console.log(formRef)
       await emailjs.sendForm(
         process?.env?.NEXT_PUBLIC_SERVICE_ID || "",
         process?.env?.NEXT_PUBLIC_TEMPLATE_ID || "",
@@ -47,7 +46,6 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
       setIsSubmit(false);
       setIsSubmitting(false);
     } catch (e) {
-      console.log(e);
       toast.error("Email failed to send");
       setIsSubmit(false);
       setIsSubmitting(false);

@@ -12,14 +12,16 @@ const Footer = () => {
     <div className="bg-white rounded-t-lg">
       <div className="grid gap-6 xl:gap-14 max-w-[1512px] mx-auto px-5 lg:px-8 py-8 xl:pt-14 xl:pb-8">
         <div className="grid lg:flex justify-between items-start">
-          <Image
-            src={"/images/logo_light.svg"}
-            className="w-full max-w-[240px] lg:max-w-full h-auto xl:w-[240px] xl:h-[64px]"
-            width={240}
-            height={64}
-            priority
-            alt="logo"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo_light.svg"}
+              className="w-full max-w-[240px] lg:max-w-full h-auto xl:w-[240px] xl:h-[64px]"
+              width={240}
+              height={64}
+              priority
+              alt="logo"
+            />
+          </Link>
           <div className="grid lg:flex gap-5 mt-5 lg:mt-0 lg:gap-20 xl:gap-[124px]">
             <div>
               <div className="mb-2 xl:mb-4 text-background text-[14px] uppercase font-bold">

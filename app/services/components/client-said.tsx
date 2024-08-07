@@ -19,9 +19,7 @@ const ClientSaid = () => {
               priority
               alt="arrow"
             />
-            <span className="text-white opacity-[0.48]">
-              WHAT MY CLIENTS SAID
-            </span>
+            <span className="text-white opacity-[0.48]">Our process</span>
           </div>
           <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[50px] xl:text-[72px] font-bold leading-[30px] lg:leading-[62px] xl:leading-[96px] opacity-[0.86] hover:scale-105 duration-200">
             Our Custom Approach to AI Development Services
@@ -65,9 +63,9 @@ const ClientSaid = () => {
         >
           {clientSaidService?.map((value, index) => {
             return (
-              <SwiperSlide key={index}>
-                <div className="h-[350px] lg:h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
-                  <div className="flex-1">
+              <SwiperSlide key={index} className="!h-auto">
+                <div className="w-full h-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
+                  <div>
                     <Image
                       src={value?.img}
                       className="w-[56px] h-[56px] group-hover:hidden"
@@ -85,8 +83,8 @@ const ClientSaid = () => {
                       alt="avatar"
                     />
                   </div>
-                  <div>
-                    <p className="font-medium text-[30px] lg:text-[36px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
+                  <div className="pt-28">
+                    <p className="font-medium text-[30px] leading-[36px] lg:text-[36px] lg:leading-[40px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
                       {value?.title}
                     </p>
                     <p className="pt-4 text-white lg:text-[18px] opacity-[0.48] group-hover:text-background group-hover:opacity-100">

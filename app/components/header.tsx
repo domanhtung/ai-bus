@@ -62,14 +62,16 @@ const Header = () => {
     <div className="h-[76px] overflow-hidden">
       <div className="fixed top-0 left-0 w-full h-[76px] border-b border-white bg-background border-opacity-20 z-50">
         <div className="flex h-full max-w-[1512px] mx-auto px-5 xl:px-8 items-center justify-between">
-          <Image
-            src={"/images/logo.svg"}
-            className="w-[120px] h-[40px] lg:w-[132px] lg:h-[44px]"
-            width={132}
-            height={44}
-            priority
-            alt="logo"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo.svg"}
+              className="w-[120px] h-[40px] lg:w-[132px] lg:h-[44px]"
+              width={132}
+              height={44}
+              priority
+              alt="logo"
+            />
+          </Link>
           <div className="hidden lg:flex gap-6 items-center">
             <div className="flex items-center">
               {navbarList?.map((navbar) => {

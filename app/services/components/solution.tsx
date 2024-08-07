@@ -1,15 +1,27 @@
 "use client";
-import { solutionServiceList } from "@/app/constants/service";
 import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const SolutionService = () => {
-  const [currentId, setCurrentId] = useState<string>(
-    solutionServiceList?.[0]?.key
-  );
+interface Props {
+  solutionList: {
+    key: string;
+    keyName: string;
+    subTitle: string;
+    title: string;
+    description: string;
+    list: {
+      title: string;
+      content: string;
+    }[];
+  }[];
+}
+
+const SolutionService = ({ solutionList }: Props) => {
+  const [currentId, setCurrentId] = useState<string>(solutionList?.[0]?.key);
 
   useEffect(() => {
+    setCurrentId(solutionList?.[0]?.key);
     if (typeof window !== "undefined" && !!window?.IntersectionObserver) {
       let observer = new IntersectionObserver(
         (entries) => {
@@ -30,14 +42,14 @@ const SolutionService = () => {
           observer.unobserve(solution);
         });
     }
-  }, []);
+  }, [solutionList]);
 
   return (
-    <section className="py-12 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto">
+    <section className="py-12 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden lg:overflow-visible">
       <div className="grid lg:grid-cols-2">
         <div className="hidden lg:block">
           <div className="solution-img grid gap-3">
-            {solutionServiceList?.map((solution) => {
+            {solutionList?.map((solution) => {
               return (
                 <div
                   key={solution?.key}
@@ -65,8 +77,8 @@ const SolutionService = () => {
             })}
           </div>
         </div>
-        <div className="grid gap-16 lg:gap-[124px] overflow-hidden">
-          {solutionServiceList?.map((solution) => {
+        <div className="grid gap-16 lg:gap-[124px] lg:overflow-hidden">
+          {solutionList?.map((solution) => {
             return (
               <div key={solution?.key} id={solution?.key} className="solution">
                 <div data-aos="fade-left">
@@ -81,7 +93,7 @@ const SolutionService = () => {
                     />
                     {solution?.subTitle}
                   </div>
-                  <div className="pt-6 text-[32px] lg:text-[48px] font-bold opacity-[0.86] text-white hover:pl-5 hover:scale-105 duration-200">
+                  <div className="pt-6 text-[32px] lg:text-[48px] font-bold opacity-[0.86] text-white lg:hover:pl-5 lg:pr-5 hover:scale-105 duration-200">
                     {solution?.title}
                   </div>
                 </div>
