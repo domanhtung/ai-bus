@@ -386,11 +386,11 @@ export const solutionServiceByKey = {
 };
 
 export const quotesService = [
-  "The Future is AI, and It Starts Here.",
-  "Turning Concepts into Smart Solutions.",
-  "Pioneering AI Solutions for Your Success.",
-  "Custom AI Tools Aligned with Your Ambitions.",
-  "Beyond the horizon, beyond the known.\nwe push the limits of artificial intelligence.",
+  "The Future is AI, and It Starts Here.                              ",
+  "Turning Concepts into Smart Solutions.                              ",
+  "Pioneering AI Solutions for Your Success.                              ",
+  "Custom AI Tools Aligned with Your Ambitions.                              ",
+  "Beyond the horizon, beyond the known.\nWe push the limits of artificial intelligence.                              ",
 ];
 
 export const serveService = [

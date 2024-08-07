@@ -17,7 +17,7 @@ const FutureService = () => {
           currentText =
             currentText + quotesService?.[currentQuotesIdx]?.[currentIndex];
           ref.current.innerHTML =
-            currentText + `<span style="color: #FF6C5C;">|</span>`;
+            currentText?.trim() + `<span style="color: #FF6C5C;">|</span>`;
           currentIndex++;
         } else {
           currentIndex = 0;
@@ -28,7 +28,7 @@ const FutureService = () => {
             currentQuotesIdx++;
           }
         }
-      }, 80);
+      }, 70);
       return () => clearInterval(intervalId);
     }
   }, []);
