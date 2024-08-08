@@ -15,7 +15,7 @@ const Footer = () => {
   const [showAbout, setShowAbout] = useState<boolean>(false);
 
   return (
-    <div className="bg-white rounded-t-lg">
+    <div className="bg-white rounded-t-lg overflow-hidden">
       <div className="grid gap-11 lg:gap-6 xl:gap-14 max-w-[1512px] mx-auto px-5 lg:px-8 pt-14 pb-8">
         <div className="lg:flex w-full justify-between items-start">
           <Link href={"/"}>
@@ -94,7 +94,7 @@ const Footer = () => {
               {socialList?.map((social, index) => {
                 return (
                   <Link key={index} href={social?.link} target={"_blank"}>
-                    <div className="flex mb-4 xl:mb-4 items-center gap-4 text-background text-[14px] font-medium hover:text-primary capitalize">
+                    <div className="flex mb-4 xl:mb-4 items-center gap-4 text-background text-[14px] font-medium hover:text-primary">
                       <Image
                         src={social?.icon}
                         className="min-w-[20px]"
@@ -112,7 +112,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="grid lg:flex gap-5 justify-between items-end">
-          <div className="max-w-[440px] text-[18px] leading-[28px] font-medium text-background">
+          <div
+            data-aos="fade-right"
+            className="max-w-[440px] text-[18px] leading-[28px] font-medium text-background"
+          >
             Expertly navigating technical complexities of blockchain and AI,
             delivering solutions that achieve product-market fit so businesses
             can focus on growth and success.

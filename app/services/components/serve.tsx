@@ -1,8 +1,12 @@
 import { ButtonSecondary } from "@/app/components/custom/button";
 import { serveService } from "@/app/constants/service";
+import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
+import { useContext } from "react";
 
 const ServeService = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="max-w-[1512px] mx-auto lg:px-8 py-8 lg:py-24">
       <div className="px-4 lg:px-0">
@@ -70,6 +74,7 @@ const ServeService = () => {
         <ButtonSecondary
           title="Discuss Your Business Requirements"
           className="w-full lg:w-fit"
+          onClick={() => showContact()}
         />
       </div>
     </section>
