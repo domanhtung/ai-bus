@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { ButtonDefault, ButtonSecondary } from "../components/custom/button";
+import Link from "next/link";
+import { navbarUrl } from "../constants/home";
 
 const Banner = () => {
   return (
@@ -43,8 +45,9 @@ const Banner = () => {
             Experts.
           </p>
           <div className="flex gap-4 pt-6">
-            <ButtonSecondary title="Read more" />
-            <ButtonDefault title="Scroll to explore" />
+            <Link href={navbarUrl.about}>
+              <ButtonSecondary title="About Us" />
+            </Link>
           </div>
         </div>
         <Image
@@ -61,8 +64,9 @@ const Banner = () => {
             Experts.
           </p>
           <div className="grid grid-cols-2 gap-4 pt-4">
-            <ButtonSecondary title="Read more" />
-            <ButtonDefault title="Scroll to explore" />
+            <Link href={navbarUrl.about}>
+              <ButtonSecondary title="About Us" />
+            </Link>
           </div>
         </div>
       </div>

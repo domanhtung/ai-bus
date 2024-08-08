@@ -1,23 +1,69 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { navbarList } from "../constants/home";
+import { navbarList, navbarUrl } from "../constants/home";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { Dispatch, SetStateAction, useContext, useMemo, useState } from "react";
 import { ButtonPrimary } from "./custom/button";
 import { ContactContext } from "../context/contact-context";
+
+interface SubProps {
+  index: number;
+  subMenu: any;
+  pathname: string;
+  setShowNavbar: Dispatch<SetStateAction<boolean>>;
+}
+
+const SubmenuName = ({ index, subMenu, pathname, setShowNavbar }: SubProps) => {
+  const searchParams = useSearchParams();
+  const searchId = searchParams.get("service");
+
+  const isCurrentTab = useMemo(() => {
+    if (!searchId && !index && pathname === navbarUrl.services) return true;
+    if (searchId === subMenu?.key) return true;
+    return false;
+  }, [searchId, index, pathname]);
+
+  return (
+    <Link
+      href={`${navbarUrl.services}?service=${subMenu?.key}`}
+      onClick={() => setShowNavbar(false)}
+    >
+      <div
+        className={clsx(
+          "flex gap-3 items-center justify-between whitespace-nowrap hover:text-primary",
+          isCurrentTab && "text-primary"
+        )}
+      >
+        {subMenu?.subTitle}
+        <Image
+          src={"/images/arrow-right-s.svg"}
+          className={clsx(
+            "min-w-[20px]",
+            isCurrentTab ? "opacity-100" : "opacity-0"
+          )}
+          width={20}
+          height={20}
+          priority
+          alt="arrow"
+        />
+      </div>
+    </Link>
+  );
+};
 
 interface Props {
   pathname: string;
   navbar: {
     title: string;
     path: string;
+    subMenu: any;
   };
   setShowNavbar: Dispatch<SetStateAction<boolean>>;
 }
 
-const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
+const NavLink = ({ pathname, navbar, setShowNavbar }: Props) => {
   const isActive = useMemo(() => {
     return (
       (pathname !== "/" &&
@@ -28,7 +74,7 @@ const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
   }, [pathname, navbar?.path]);
 
   return (
-    <Link href={navbar?.path} onClick={() => setShowNavbar(false)}>
+    <>
       <div className="px-4 py-3">
         <div
           className={clsx(
@@ -50,6 +96,49 @@ const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
           </div>
         </div>
       </div>
+      {navbar?.subMenu && (
+        <div className="lg:absolute gap-4 group-hover:grid hidden bg-background top-[45px] left-0 p-4 lg:border border-white border-opacity-[0.16] rounded-xl">
+          {navbar?.subMenu?.map((subMenu: any, index: number) => {
+            return (
+              <SubmenuName
+                key={subMenu?.subTitle}
+                index={index}
+                subMenu={subMenu}
+                pathname={pathname}
+                setShowNavbar={setShowNavbar}
+              />
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
+};
+
+const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
+  if (navbar?.subMenu)
+    return (
+      <div className="relative cursor-pointer group">
+        <NavLink
+          key={navbar?.title}
+          pathname={pathname}
+          navbar={navbar}
+          setShowNavbar={setShowNavbar}
+        />
+      </div>
+    );
+  return (
+    <Link
+      href={navbar?.path}
+      className="relative"
+      onClick={() => setShowNavbar(false)}
+    >
+      <NavLink
+        key={navbar?.title}
+        pathname={pathname}
+        navbar={navbar}
+        setShowNavbar={setShowNavbar}
+      />
     </Link>
   );
 };

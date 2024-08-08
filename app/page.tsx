@@ -8,7 +8,7 @@ import NumberSection from "./home/number-section";
 import TechStacks from "./home/tech-stacks";
 import WhyChooseUs from "./home/choose";
 import CaseStudy from "./home/case-study";
-import Partners from "./home/partners";
+// import Partners from "./home/partners";
 import Testimonial from "./home/testimonial";
 import Blogs from "./home/blog";
 import Contact from "./home/contact";
@@ -33,7 +33,7 @@ export default function Home() {
       <TechStacks />
       <WhyChooseUs />
       <CaseStudy />
-      <Partners />
+      {/* <Partners /> */}
       <Testimonial />
       <Blogs />
       <Contact />

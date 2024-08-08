@@ -6,6 +6,7 @@ export const solutionServiceKey = {
 
 export const solutionServiceByKey = {
   [solutionServiceKey.ai_solution]: {
+    key: solutionServiceKey.ai_solution,
     title: "AI Solutions for Smarter Business",
     subTitle: "AI as Services",
     contents: [
@@ -132,6 +133,7 @@ export const solutionServiceByKey = {
     ],
   },
   [solutionServiceKey.web3_solution]: {
+    key: solutionServiceKey.web3_solution,
     title: "Transforming the Future with Web3 Solutions",
     subTitle: "Blockchain Development",
     contents: [
@@ -258,6 +260,7 @@ export const solutionServiceByKey = {
     ],
   },
   [solutionServiceKey.financial_innovation]: {
+    key: solutionServiceKey.financial_innovation,
     title: "Financial Innovation with AI & Blockchain",
     subTitle: "FinTech Innovations",
     contents: [

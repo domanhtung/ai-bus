@@ -1,14 +1,23 @@
 import { solutionServiceByKey, solutionServiceKey } from "./service";
 
+export const navbarUrl = {
+  home: "/",
+  services: "/services",
+  caseStudy: "/case-study",
+  about: "/about",
+  careers: "/careers",
+  blogs: "/blogs",
+};
+
 export const navbarList = [
   {
     title: "Home",
-    path: "/",
+    path: navbarUrl.home,
     subMenu: null,
   },
   {
     title: "Services",
-    path: "/services",
+    path: navbarUrl.services,
     subMenu: [
       solutionServiceByKey?.[solutionServiceKey.ai_solution],
       solutionServiceByKey?.[solutionServiceKey.web3_solution],
@@ -17,22 +26,22 @@ export const navbarList = [
   },
   {
     title: "Case study",
-    path: "/case-study",
+    path: navbarUrl.caseStudy,
     subMenu: null,
   },
   {
     title: "About",
-    path: "/about",
+    path: navbarUrl.about,
     subMenu: null,
   },
   {
     title: "Careers",
-    path: "/careers",
+    path: navbarUrl.careers,
     subMenu: null,
   },
   {
     title: "Blogs",
-    path: "/blogs",
+    path: navbarUrl.blogs,
     subMenu: null,
   },
 ];
@@ -296,22 +305,26 @@ export const techStacks = [
 
 export const whyChooseUs = [
   {
-    img: "/images/home/union.png",
+    img: "/images/home/innovatioon_hub.svg",
+    imgActive: "/images/home/innovatioon_hub_active.svg",
     title: "Innovation Hub",
     content: "Always exploring the latest in AI and Blockchain technology.",
   },
   {
-    img: "/images/home/union.png",
+    img: "/images/home/client_centric.svg",
+    imgActive: "/images/home/client_centric_active.svg",
     title: "Client-Centric",
     content: "Tailored solutions focused on meeting your specific needs.",
   },
   {
-    img: "/images/home/union.png",
+    img: "/images/home/dedicated_team.svg",
+    imgActive: "/images/home/dedicated_team_active.svg",
     title: "Dedicated team",
     content: "Dedicated team on your site, fully aligned with your goals.",
   },
   {
-    img: "/images/home/union.png",
+    img: "/images/home/secure_salable.svg",
+    imgActive: "/images/home/secure_salable_active.svg",
     title: "Secure & Salable",
     content:
       "Secure, scalable, and cross-platform solutions for your growing needs.",
