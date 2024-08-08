@@ -1,29 +1,39 @@
-import { solutionServiceKey } from "./service";
+import { solutionServiceByKey, solutionServiceKey } from "./service";
 
 export const navbarList = [
   {
     title: "Home",
     path: "/",
+    subMenu: null,
   },
   {
     title: "Services",
     path: "/services",
+    subMenu: [
+      solutionServiceByKey?.[solutionServiceKey.ai_solution],
+      solutionServiceByKey?.[solutionServiceKey.web3_solution],
+      solutionServiceByKey?.[solutionServiceKey.financial_innovation],
+    ],
   },
   {
     title: "Case study",
     path: "/case-study",
+    subMenu: null,
   },
   {
     title: "About",
     path: "/about",
+    subMenu: null,
   },
   {
     title: "Careers",
     path: "/careers",
+    subMenu: null,
   },
   {
     title: "Blogs",
     path: "/blogs",
+    subMenu: null,
   },
 ];
 

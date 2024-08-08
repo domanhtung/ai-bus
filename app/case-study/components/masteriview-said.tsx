@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const MasteriviewSaidCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24 overflow-hidden">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-0">
         <div>
-          <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
+          <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
             <Image
               src={"/images/arrow-right-up.svg"}
-              className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+              className="w-[20px] h-[20px]"
               width={20}
               height={20}
               priority
@@ -17,7 +17,7 @@ const MasteriviewSaidCaseStudy = () => {
             />
             <span className="text-white opacity-[0.48]">Masteriview said</span>
           </div>
-          <h3 className="pt-6 text-[30px] lg:text-[48px] leading-[46px] lg:leading-[56px] font-bold opacity-[0.86] hover:scale-105 duration-200">
+          <h3 className="pt-4 lg:pt-6 text-[30px] lg:text-[48px] leading-[46px] lg:leading-[56px] font-bold opacity-[0.86] hover:scale-105 duration-200">
             Masteriview said
           </h3>
         </div>

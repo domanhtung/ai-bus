@@ -61,7 +61,7 @@ const Header = () => {
 
   return (
     <div className="h-[76px] overflow-hidden">
-      <div className="fixed top-0 left-0 w-full h-[76px] lg:border-b border-white bg-background border-opacity-20 z-50">
+      <div className="fixed top-0 left-0 w-full h-[76px] bg-background border-opacity-20 z-50">
         <div className="flex h-full max-w-[1512px] mx-auto px-5 xl:px-8 items-center justify-between">
           <Link href={"/"}>
             <Image

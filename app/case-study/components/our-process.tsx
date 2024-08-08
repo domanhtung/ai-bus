@@ -46,7 +46,7 @@ const OurProcessCaseStudy = () => {
                 key={index}
                 className="max-w-[320px] lg:max-w-full pl-4 pr-2 lg:px-0"
               >
-                <div className="h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
+                <div className="h-[400px] lg:h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
                   <div className="flex-1">
                     <Image
                       src={value?.img}
@@ -66,10 +66,10 @@ const OurProcessCaseStudy = () => {
                     />
                   </div>
                   <div>
-                    <p className="font-medium text-[36px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
+                    <p className="font-medium text-[24px] mb-4 lg:mb-0 lg:text-[36px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
                       {value?.title}
                     </p>
-                    <ul className="font-medium opacity-[0.48] list-disc	pl-5 group-hover:text-background group-hover:opacity-100">
+                    <ul className="font-medium opacity-[0.48] text-[18px] lg:text-[16px] leading-[28px] list-disc	pl-5 group-hover:text-background group-hover:opacity-100">
                       {value?.content?.map((item, idx) => {
                         return <li key={idx}>{item}</li>;
                       })}

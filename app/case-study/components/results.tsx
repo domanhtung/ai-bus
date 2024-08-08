@@ -2,8 +2,8 @@ import { resultsCaseStudy } from "@/app/constants/case-study";
 
 const TheResultCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24 overflow-hidden">
-      <div className="grid lg:grid-cols-2 gap-8 lg:gap-0">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24 overflow-hidden">
+      <div className="grid lg:grid-cols-2 gap-7 lg:gap-0">
         <h2 className="text-[30px] lg:text-[48px] font-bold leading-[46px] lg:leading-[56px] text-primary">
           <div data-aos="fade-right" className="hover:scale-105 duration-200">
             The Results
@@ -12,7 +12,7 @@ const TheResultCaseStudy = () => {
         <div className="flex justify-end">
           <div className="max-w-[662px]">
             <p data-aos="fade-left">
-              <span className="opacity-[0.48]">
+              <span className="opacity-[0.48] text-[14px] lg:text-[16px]">
                 The project&apos;s amazing success may be attributed to its
                 lifelike visualizations, which increased user engagement by 400%
                 and conversion rates by 500%. We exceeded quality standards and
