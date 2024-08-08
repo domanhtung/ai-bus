@@ -8,7 +8,7 @@ export const solutionServiceByKey = {
   [solutionServiceKey.ai_solution]: {
     key: solutionServiceKey.ai_solution,
     title: "AI Solutions for Smarter Business",
-    subTitle: "AI-powered solutions",
+    subTitle: "AI-powered Solutions",
     contents: [
       {
         key: "machine_learning",
