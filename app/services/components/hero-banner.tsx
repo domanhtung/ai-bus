@@ -7,11 +7,11 @@ interface Props {
 
 const HeroBanner = ({ title, subTitle }: Props) => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
-      <div className="flex gap-2 items-center justify-center text-[12px] xl:text-[14px] font-medium uppercase">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24">
+      <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
         <Image
           src={"/images/arrow-right-up.svg"}
-          className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+          className="w-[20px] h-[20px]"
           width={20}
           height={20}
           priority
@@ -19,7 +19,7 @@ const HeroBanner = ({ title, subTitle }: Props) => {
         />
         <span className="text-white opacity-[0.48]">{subTitle}</span>
       </div>
-      <h1 className="pt-6 text-[12vw] leading-[12vw] lg:text-[96px] lg:leading-[96px] font-[800] text-white opacity-[0.86px] text-center hover:scale-105 duration-200">
+      <h1 className="pt-6 text-[40px] leading-[48px] lg:text-[96px] lg:leading-[96px] font-[800] text-white opacity-[0.86px] hover:scale-105 duration-200">
         {title}
       </h1>
       <Image

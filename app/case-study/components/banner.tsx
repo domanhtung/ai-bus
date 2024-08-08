@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BannerHeroCaseStudy = () => {
   return (
-    <section className="pb-24 pt-8 max-w-[1512px] px-4 lg:px-8 mx-auto">
+    <section className="pb-8 lg:pb-24 pt-8 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
       <Image
         src={"/images/case_study/hero_img.svg"}
         className="w-full h-auto rounded-xl"
@@ -12,10 +12,10 @@ const BannerHeroCaseStudy = () => {
         alt="hero banner"
       />
       <div className="pt-10 lg:pt-[72px]">
-        <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
+        <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
           <Image
             src={"/images/arrow-right-up.svg"}
-            className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+            className="w-[20px] h-[20px]"
             width={20}
             height={20}
             priority
@@ -25,12 +25,12 @@ const BannerHeroCaseStudy = () => {
             research and development center
           </span>
         </div>
-        <div className="grid lg:grid-cols-2 pt-6 items-end">
+        <div className="grid lg:grid-cols-2 pt-4 lg:pt-6 items-end">
           <div>
-            <h1 className="text-[14vw] leading-[14vw] lg:text-[96px] lg:leading-[96px] font-[800] opacity-[0.86] hover:scale-105 duration-200">
+            <h1 className="text-[40px] leading-[48px] lg:text-[96px] lg:leading-[96px] font-[800] opacity-[0.86] hover:scale-105 duration-200">
               MateriView
             </h1>
-            <p className="max-w-[662px] pt-5 opacity-[0.48]">
+            <p className="max-w-[662px] pt-4 lg:pt-5 text-[14px] lg:text-[16px] opacity-[0.48]">
               MateriView uses advanced AI to revolutionize interior spaces by
               precisely detecting surfaces like floors, walls, and ceilings, and
               effortlessly replacing them with new patterns.

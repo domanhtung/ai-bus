@@ -7,13 +7,13 @@ import { clientSaidService } from "@/app/constants/service";
 
 const ClientSaid = () => {
   return (
-    <section className="py-24 max-w-[1512px] px-8 mx-auto">
-      <div className="lg:flex gap-3 justify-between">
+    <section className="py-8 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
+      <div className="lg:flex gap-3 px-4 justify-between">
         <div className="w-full max-w-[1264px]">
-          <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
+          <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
             <Image
               src={"/images/arrow-right-up.svg"}
-              className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+              className="w-[20px] h-[20px]"
               width={20}
               height={20}
               priority
@@ -21,10 +21,10 @@ const ClientSaid = () => {
             />
             <span className="text-white opacity-[0.48]">Our process</span>
           </div>
-          <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[50px] xl:text-[72px] font-bold leading-[30px] lg:leading-[62px] xl:leading-[96px] opacity-[0.86] hover:scale-105 duration-200">
+          <h3 className="pt-3 xl:pt-6 text-[28px] lg:text-[50px] xl:text-[72px] font-bold leading-[40px] lg:leading-[62px] xl:leading-[96px] opacity-[0.86] hover:scale-105 duration-200">
             Our Custom Approach to AI Development Services
           </h3>
-          <p className="pt-5 text-[18px] opacity-[0.48]">
+          <p className="pt-5 lg:text-[18px] leading-[28px] opacity-[0.48]">
             As an artificial intelligence software development company, we offer
             comprehensive services, including data preparation for AI algorithms
             and system rollout for a large number of users. As an illustrious AI
@@ -32,7 +32,7 @@ const ClientSaid = () => {
             of offering a definitive value to your business.
           </p>
         </div>
-        <div className="flex items-end mt-5 lg:mt-0">
+        <div className="flex items-end mt-4 lg:mt-0">
           <div className="lg:flex gap-4 justify-end">
             <ButtonDefault
               icon="fa fa-angle-left"
@@ -45,11 +45,11 @@ const ClientSaid = () => {
           </div>
         </div>
       </div>
-      <div className="pt-[72px]">
+      <div className="pt-6 lg:pt-[72px]">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={"auto"}
           loop
-          spaceBetween={24}
+          spaceBetween={0}
           navigation={{
             nextEl: ".clien-said-button-next",
             prevEl: ".clien-said-button-prev",
@@ -57,13 +57,17 @@ const ClientSaid = () => {
           breakpoints={{
             1024: {
               slidesPerView: 3,
+              spaceBetween: 24,
             },
           }}
           modules={[Navigation]}
         >
           {clientSaidService?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="!h-auto">
+              <SwiperSlide
+                key={index}
+                className="w-[320px] max-w-[320px] lg:w-full lg:max-w-full !h-auto pl-4 pr-2 lg:px-0"
+              >
                 <div className="w-full h-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
                   <div>
                     <Image

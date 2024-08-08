@@ -47,7 +47,7 @@ const Modal = ({
   return (
     <div
       className={clsx(
-        "items-top fixed left-0 top-0 z-50 flex h-full w-full justify-center overflow-y-auto overflow-x-hidden p-4",
+        "items-top fixed left-0 top-0 z-50 flex h-full w-full justify-center overflow-y-auto overflow-x-hidden",
         className
       )}
     >
@@ -55,9 +55,9 @@ const Modal = ({
         className="fixed left-0 top-0 z-0 h-full w-full bg-black bg-opacity-80 p-4"
         onClick={() => handleClose()}
       />
-      <div className="z-60 relative my-auto h-fit w-fit max-w-full overflow-x-hidden">
+      <div className="z-60 relative my-auto h-fit w-fit max-w-full overflow-x-hidden shadow-[0px_4px_8px_0px_#00000052]">
         <div className="relative rounded-3xl bg-background">
-          <div className="flex items-center justify-between gap-2 p-6">
+          <div className="flex items-center justify-between gap-2 p-4 lg:p-6">
             <span className="text-[30px] font-semibold leading-[44px]">
               {title}
             </span>
@@ -71,7 +71,7 @@ const Modal = ({
               alt="close"
             />
           </div>
-          <div className="px-6 pb-6">{children}</div>
+          <div className="px-4 pb-4 lg:px-6 lg:pb-6">{children}</div>
         </div>
       </div>
     </div>

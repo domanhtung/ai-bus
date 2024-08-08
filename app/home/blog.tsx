@@ -5,45 +5,48 @@ import { Navigation, EffectCoverflow, Autoplay } from "swiper/modules";
 
 const Blogs = () => {
   return (
-    <div className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 xl:py-24">
-      <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
-        <Image
-          src={"/images/arrow-right-up.svg"}
-          className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
-          width={20}
-          height={20}
-          priority
-          alt="arrow"
-        />
-        <span className="text-white opacity-[0.48]">latest Blog</span>
+    <div className="max-w-[1512px] mx-auto px-0 lg:px-8 py-8 xl:py-24">
+      <div className="px-4 lg:px-0">
+        <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
+          <Image
+            src={"/images/arrow-right-up.svg"}
+            className="w-[20px] h-[20px]"
+            width={20}
+            height={20}
+            priority
+            alt="arrow"
+          />
+          <span className="text-white opacity-[0.48]">latest Blog</span>
+        </div>
+        <h3 className="pt-4 xl:pt-6 text-[28px] lg:text-[44px] xl:text-[60px] font-bold leading-[40px] lg:leading-[50px] xl:leading-[72px] opacity-[0.86] hover:scale-105 duration-200">
+          Tech Insights and Behind-the-Scenes Stories
+        </h3>
       </div>
-      <h3 className="pt-4 xl:pt-6 text-[30px] lg:text-[44px] xl:text-[60px] font-bold leading-[34px] lg:leading-[50px] xl:leading-[72px] opacity-[0.86] hover:scale-105 duration-200">
-        Tech Insights and Behind-the-Scenes Stories
-      </h3>
 
       <div className="pt-10 xl:pt-[72px]">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={"auto"}
           loop
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          spaceBetween={24}
+          spaceBetween={0}
           breakpoints={{
             1024: {
               slidesPerView: 3,
+              spaceBetween: 24,
             },
           }}
           modules={[Navigation, EffectCoverflow, Autoplay]}
         >
           {blogList?.map((blog, index) => {
             return (
-              <SwiperSlide key={index}>
-                <div>
+              <SwiperSlide key={index} className="max-w-[320px] lg:max-w-full">
+                <div className="pl-4 pr-2 lg:px-0">
                   <Image
                     src={blog?.img}
-                    className="w-full h-[300px] xl:h-[350px] bg-white bg-opacity-[0.04] object-cover rounded-xl overflow-hidden"
+                    className="w-full h-[240px] xl:h-[350px] bg-white bg-opacity-[0.04] object-cover rounded-xl overflow-hidden"
                     width={466}
                     height={350}
                     priority

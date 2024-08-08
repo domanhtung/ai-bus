@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MasteriviewSaidCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-0">
         <div>
           <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">

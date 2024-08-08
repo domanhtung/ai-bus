@@ -7,9 +7,9 @@ import { ourProcess } from "@/app/constants/case-study";
 
 const OurProcessCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
-      <div className="lg:flex items-center justify-between">
-        <h2 className="text-[30px] lg:text-[48px] font-bold leading-[46px] lg:leading-[56px] hover:scale-105 duration-200">
+    <section className="max-w-[1512px] mx-auto lg:px-8 py-12 lg:py-24 overflow-hidden">
+      <div className="flex items-center px-4 lg:px-0 justify-between">
+        <h2 className="text-[26px] lg:text-[48px] font-bold leading-[36px] lg:leading-[56px] items-center hover:scale-105 duration-200">
           Our Process
         </h2>
         <div className="lg:flex mt-5 lg:mt-0 gap-4 justify-end">
@@ -25,9 +25,9 @@ const OurProcessCaseStudy = () => {
       </div>
       <div className="mt-8 lg:pt-[72px]">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={"auto"}
           loop
-          spaceBetween={24}
+          spaceBetween={0}
           navigation={{
             nextEl: ".process-button-next",
             prevEl: ".process-button-prev",
@@ -35,13 +35,17 @@ const OurProcessCaseStudy = () => {
           breakpoints={{
             1024: {
               slidesPerView: 3,
+              spaceBetween: 24,
             },
           }}
           modules={[Navigation]}
         >
           {ourProcess?.map((value, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide
+                key={index}
+                className="max-w-[320px] lg:max-w-full pl-4 pr-2 lg:px-0"
+              >
                 <div className="h-[440px] flex flex-col w-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
                   <div className="flex-1">
                     <Image

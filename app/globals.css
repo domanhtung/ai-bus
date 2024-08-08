@@ -49,10 +49,6 @@ body {
 .testimonial-swip .swiper-slide-active {
   padding: 0px 0px;
 }
-.testimonial-swip .card-testimonial {
-  transition-duration: 0.5s;
-  transition-property: background-color;
-}
 .testimonial-swip .swiper-slide-active .card-testimonial {
   background: #ff6c5c;
 }
@@ -94,5 +90,8 @@ body {
 @media (max-width: 1023px) {
   .testimonial-swip {
     width: 100%;
+  }
+  .testimonial-swip .swiper-slide {
+    padding: 0 8px 0 16px;
   }
 }

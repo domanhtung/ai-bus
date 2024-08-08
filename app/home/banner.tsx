@@ -3,11 +3,11 @@ import { ButtonDefault, ButtonSecondary } from "../components/custom/button";
 
 const Banner = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
-      <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-6 lg:py-24">
+      <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
         <Image
           src={"/images/arrow-right-up.svg"}
-          className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+          className="w-[20px] h-[20px]"
           width={20}
           height={20}
           priority
@@ -56,7 +56,7 @@ const Banner = () => {
           alt="banner hero"
         />
         <div data-aos="fade-right" className="block lg:hidden mt-8">
-          <p className="lg:text-[24px] xl:text-[30px] font-semibold opacity-[0.48]">
+          <p className="text-[16px] font-semibold opacity-[0.48]">
             Your Trusted Partner in Innovation with AI, Blockchain & Fintech
             Experts.
           </p>

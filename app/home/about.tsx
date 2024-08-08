@@ -19,12 +19,12 @@ const About = () => {
 
   return (
     <section className="bg-white rounded-xl overflow-hidden">
-      <div className="max-w-[1512px] mx-auto lg:px-8 py-12 lg:py-24 text-background">
+      <div className="max-w-[1512px] mx-auto lg:px-8 py-8 lg:py-24 text-background">
         <div className="px-4 lg:px-0">
-          <div className="flex gap-2 items-center text-[12px] xl:text-[14px] font-medium uppercase">
+          <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
             <Image
               src={"/images/arrow-bl-right-up.svg"}
-              className="w-[16px] h-[16px] xl:w-[20px] xl:h-[20px]"
+              className="w-[20px] h-[20px]"
               width={20}
               height={20}
               priority
@@ -32,7 +32,7 @@ const About = () => {
             />
             Who we are
           </div>
-          <h3 className="max-w-[1300px] pt-3 xl:pt-6 text-[30px] lg:text-[50px] xl:text-[72px] leading-[34px] lg:leading-[62px] xl:leading-[96px] font-bold hover:scale-105 duration-200">
+          <h3 className="max-w-[1300px] pt-4 xl:pt-6 text-[30px] lg:text-[50px] xl:text-[72px] leading-[44px] lg:leading-[62px] xl:leading-[96px] font-bold hover:scale-105 duration-200">
             High-tech Bus Solutions Crafted to Streamline Your Operations and
             Meet Your Specific Needs.
           </h3>
@@ -52,13 +52,11 @@ const About = () => {
                   The Foundation of Our Philosophy
                 </div>
                 <div className="flex mt-4 lg:mt-0">
-                  <Link href={""} className="w-full lg:w-fit">
-                    <ButtonSecondaryDark
-                      title="Meet the team"
-                      className="w-full lg:w-fit"
-                      onClick={() => showContact()}
-                    />
-                  </Link>
+                  <ButtonSecondaryDark
+                    title="Meet the team"
+                    className="w-full lg:w-fit"
+                    onClick={() => showContact()}
+                  />
                 </div>
               </div>
               <div className="hidden lg:block w-[90%] h-full mx-auto border-[2px] border-background rounded-3xl" />
@@ -71,7 +69,7 @@ const About = () => {
                   <div
                     key={section?.title}
                     className={clsx(
-                      "relative flex flex-col min-w-[320px] lg:min-w-0 h-[216px] lg:h-[347px] p-4 group border border-background rounded-xl cursor-pointer overflow-hidden",
+                      "relative flex flex-col min-w-[320px] lg:min-w-0 h-[216px] lg:h-[347px] p-4 group border border-background rounded-xl cursor-pointer overflow-hidden duration-700",
                       currentSelect === index ? "bg-background" : ""
                     )}
                     onMouseEnter={() => onHover(index)}
@@ -93,16 +91,20 @@ const About = () => {
                     <div className="text-background">
                       <div
                         className={clsx(
-                          "text-[24px] xl:text-[36px] font-semibold",
-                          currentSelect === index && "text-white opacity-[0.86]"
+                          "text-[24px] xl:text-[36px] font-semibold duration-700",
+                          currentSelect === index
+                            ? "text-white opacity-[0.86]"
+                            : "text-background"
                         )}
                       >
                         {section?.title}
                       </div>
                       <p
                         className={clsx(
-                          "font-medium text-[16px]",
-                          currentSelect === index && "text-white opacity-[0.86]"
+                          "font-medium text-[16px] duration-700",
+                          currentSelect === index
+                            ? "text-white opacity-[0.86]"
+                            : "text-background"
                         )}
                       >
                         {section?.content}

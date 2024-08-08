@@ -4,7 +4,7 @@ import Link from "next/link";
 import { navbarList } from "../constants/home";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { useContext, useMemo, useState } from "react";
+import { Dispatch, SetStateAction, useContext, useMemo, useState } from "react";
 import { ButtonPrimary } from "./custom/button";
 import { ContactContext } from "../context/contact-context";
 
@@ -14,9 +14,10 @@ interface Props {
     title: string;
     path: string;
   };
+  setShowNavbar: Dispatch<SetStateAction<boolean>>;
 }
 
-const NavName = ({ pathname, navbar }: Props) => {
+const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
   const isActive = useMemo(() => {
     return (
       (pathname !== "/" &&
@@ -27,7 +28,7 @@ const NavName = ({ pathname, navbar }: Props) => {
   }, [pathname, navbar?.path]);
 
   return (
-    <Link href={navbar?.path}>
+    <Link href={navbar?.path} onClick={() => setShowNavbar(false)}>
       <div className="px-4 py-3">
         <div
           className={clsx(
@@ -60,7 +61,7 @@ const Header = () => {
 
   return (
     <div className="h-[76px] overflow-hidden">
-      <div className="fixed top-0 left-0 w-full h-[76px] border-b border-white bg-background border-opacity-20 z-50">
+      <div className="fixed top-0 left-0 w-full h-[76px] lg:border-b border-white bg-background border-opacity-20 z-50">
         <div className="flex h-full max-w-[1512px] mx-auto px-5 xl:px-8 items-center justify-between">
           <Link href={"/"}>
             <Image
@@ -80,6 +81,7 @@ const Header = () => {
                     key={navbar?.title}
                     pathname={pathname}
                     navbar={navbar}
+                    setShowNavbar={setShowNavbar}
                   />
                 );
               })}
@@ -109,6 +111,7 @@ const Header = () => {
                 key={navbar?.title}
                 pathname={pathname}
                 navbar={navbar}
+                setShowNavbar={setShowNavbar}
               />
             );
           })}

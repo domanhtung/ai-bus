@@ -54,8 +54,8 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
 
   return (
     <Modal isOpen={isOpen} title="Contact us" onClose={onClose}>
-      <div className="w-[90vw] max-w-[700px]">
-        <form ref={formRef} className="grid gap-4">
+      <div style={{ width: "calc(100vw - 32px)" }} className="max-w-[700px]">
+        <form ref={formRef} className="grid gap-4 pb-20 lg:pb-0">
           <input
             placeholder="Full name*"
             name="name"
@@ -83,6 +83,7 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
           <div className="flex pt-4 justify-end">
             <ButtonPrimary
               title={isSumitting ? "Sending..." : "Submit"}
+              className="w-full lg:w-fit"
               onClick={sendEmail}
             />
           </div>

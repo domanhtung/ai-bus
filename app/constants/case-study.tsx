@@ -3,7 +3,7 @@ export const ourProcess = [
     img: "/images/service/client_said.svg",
     imgHover: "/images/service/client_said_hover.svg",
     title: "Development",
-    content: ["Android, iOS Development", "User Testing"],
+    content: ["Android", "iOS Development", "User Testing"],
   },
   {
     img: "/images/service/client_said.svg",

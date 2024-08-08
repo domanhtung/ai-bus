@@ -2,7 +2,7 @@ import { resultsCaseStudy } from "@/app/constants/case-study";
 
 const TheResultCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-0">
         <h2 className="text-[30px] lg:text-[48px] font-bold leading-[46px] lg:leading-[56px] text-primary">
           <div data-aos="fade-right" className="hover:scale-105 duration-200">

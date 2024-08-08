@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const TechStackService = () => {
   return (
-    <section className="py-12 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
+    <section className="py-8 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
       <div className="px-4 lg:px-0">
-        <h2 className="text-[40px] lg:text-[72px] font-bold opacity-[0.86] leading-[56px] lg:leading-[96px] text-center hover:scale-105 duration-200">
+        <h2 className="text-[30px] lg:text-[72px] font-bold opacity-[0.86] leading-[44px] lg:leading-[96px] lg:text-center hover:scale-105 duration-200">
           Tech Stack We Use to
           <br />
           Deliver Top-Notch AI Services
@@ -18,9 +18,9 @@ const TechStackService = () => {
           />
         </div>
       </div>
-      <div className="mt-[72px] py-14 bg-white bg-opacity-[0.04] rounded-xl">
+      <div className="mt-8 lg:mt-[72px] py-8 lg:py-14 bg-white bg-opacity-[0.04] rounded-xl">
         <div className="overflow-auto no-scroll">
-          <div className="flex lg:grid lg:grid-cols-6 lg:max-w-[1036px] mx-auto flex-nowrap gap-5 px-4 lg:px-0">
+          <div className="flex lg:grid lg:grid-cols-6 lg:max-w-[1036px] w-fit lg:w-full mx-auto flex-nowrap gap-2 lg:gap-5 px-4 lg:px-0">
             {techStacksService?.map((value, index) => {
               return (
                 <div key={index}>
@@ -32,7 +32,7 @@ const TechStackService = () => {
                     priority
                     alt="logo"
                   />
-                  <div className="pt-4 text-center lg:text-[18px]">
+                  <div className="pt-4 text-center text-[14px] lg:text-[18px]">
                     {value?.name}
                   </div>
                 </div>

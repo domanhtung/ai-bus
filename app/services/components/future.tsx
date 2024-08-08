@@ -34,10 +34,10 @@ const FutureService = () => {
   }, []);
 
   return (
-    <section className="bg-white rounded-xl">
+    <section className="bg-white">
       <div
         ref={ref}
-        className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24 text-[36px] lg:text-[50px] text-center lg:text-left font-bold whitespace-break-spaces text-background"
+        className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24 text-[30px] lg:text-[50px] lg:text-left font-bold whitespace-break-spaces text-background"
       >
         The Future is AI, and It Starts Here.{" "}
         <span className="text-primary">|</span>

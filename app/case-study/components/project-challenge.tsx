@@ -1,8 +1,8 @@
 const ProjectChallengeCaseStudy = () => {
   return (
-    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-12 lg:py-24">
+    <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-5 lg:gap-0 overflow-hidden">
-        <h2 className="text-[30px] lg:text-[48px] font-bold leading-[46px] lg:leading-[56px]">
+        <h2 className="text-[26px] lg:text-[48px] font-bold leading-[36px] lg:leading-[56px]">
           <div data-aos="fade-right" className="hover:scale-105 duration-200">
             Our Project Challenges
           </div>
@@ -11,11 +11,11 @@ const ProjectChallengeCaseStudy = () => {
           <div className="max-w-[662px]">
             <div
               data-aos="fade-left"
-              className="text-[26px] lg:text-[36px] font-semibold leading-[30px] lg:leading-[40px]"
+              className="text-[24px] lg:text-[36px] font-semibold leading-[32px] lg:leading-[40px]"
             >
               <span>1.</span>
             </div>
-            <p data-aos="fade-left" className="pt-5">
+            <p data-aos="fade-left" className="pt-5 text-[14px] lg:text-[16px]">
               <span className="opacity-[0.48]">
                 MateriView uses advanced visualization technology to
                 revolutionize the shopping experience for homeowners, allowing
@@ -29,11 +29,11 @@ const ProjectChallengeCaseStudy = () => {
             </p>
             <div
               data-aos="fade-left"
-              className="mt-8 lg:mt-11 text-[26px] lg:text-[36px] font-semibold leading-[30px] lg:leading-[40px]"
+              className="mt-8 lg:mt-11 text-[24px] lg:text-[36px] font-semibold leading-[32px] lg:leading-[40px]"
             >
               2.
             </div>
-            <p data-aos="fade-left" className="pt-5">
+            <p data-aos="fade-left" className="pt-5 text-[14px] lg:text-[16px">
               <span className="opacity-[0.48]">
                 MateriView uses advanced visualization technology to
                 revolutionize the shopping experience for homeowners, allowing
