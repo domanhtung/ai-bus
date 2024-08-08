@@ -24,7 +24,7 @@ const TheResultCaseStudy = () => {
                 rating.
               </span>
             </p>
-            <div className="grid lg:grid-cols-2">
+            {/* <div className="grid lg:grid-cols-2">
               {resultsCaseStudy?.map((value, index) => {
                 return (
                   <div
@@ -39,7 +39,7 @@ const TheResultCaseStudy = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
