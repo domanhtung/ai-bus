@@ -131,14 +131,20 @@ export const solutions = [
 
 export const aboutSection = [
   {
+    icon: "/images/home/agility.svg",
+    iconActive: "/images/home/agility_active.svg",
     title: "Agility",
     content: "Embrace agility for rapid, collaborative success.",
   },
   {
+    icon: "/images/home/innovation.svg",
+    iconActive: "/images/home/innovation_active.svg",
     title: "Innovation",
     content: "Drive innovation with advanced technology solutions.",
   },
   {
+    icon: "/images/home/quality.svg",
+    iconActive: "/images/home/quality_active.svg",
     title: "Quality",
     content: "Deliver excellence through uncompromising quality standards.",
   },

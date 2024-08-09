@@ -83,9 +83,21 @@ const About = () => {
                     />
                     <div className="flex-1 relative">
                       {currentSelect === index ? (
-                        <EyeActive />
+                        <Image
+                          src={section?.iconActive}
+                          width={56}
+                          height={56}
+                          priority
+                          alt="icon"
+                        />
                       ) : (
-                        <EyeInActive />
+                        <Image
+                          src={section?.icon}
+                          width={56}
+                          height={56}
+                          priority
+                          alt="icon"
+                        />
                       )}
                     </div>
                     <div className="text-background">
