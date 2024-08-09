@@ -8,7 +8,7 @@ const BannerHeroCaseStudy = () => {
   return (
     <section className="pb-8 lg:pb-24 pt-8 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
       <Image
-        src={"/images/case_study/hero_img.svg"}
+        src={"/images/case_study/hero_img.jpg"}
         className="w-full h-auto rounded-xl"
         width={1448}
         height={360}

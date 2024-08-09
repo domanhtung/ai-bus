@@ -9,6 +9,7 @@ export const solutionServiceByKey = {
     key: solutionServiceKey.ai_solution,
     title: "AI Solutions for Smarter Business",
     subTitle: "AI-powered Solutions",
+    thumb: "/images/service/ai_solution.jpg",
     contents: [
       {
         key: "machine_learning",
@@ -136,6 +137,7 @@ export const solutionServiceByKey = {
     key: solutionServiceKey.web3_solution,
     title: "Transforming the Future with Web3 Solutions",
     subTitle: "Blockchain Development",
+    thumb: "/images/service/web3_solution.jpg",
     contents: [
       {
         key: "poc_mvp",
@@ -263,6 +265,7 @@ export const solutionServiceByKey = {
     key: solutionServiceKey.financial_innovation,
     title: "Financial Innovation with AI & Blockchain",
     subTitle: "FinTech Innovations",
+    thumb: "/images/service/financial.jpg",
     contents: [
       {
         key: "payments_wallets",
