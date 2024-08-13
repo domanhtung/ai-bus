@@ -68,7 +68,7 @@ const ClientSaid = () => {
                 key={index}
                 className="w-[320px] max-w-[320px] lg:w-full lg:max-w-full !h-auto pl-4 pr-2 lg:px-0"
               >
-                <div className="w-full h-full p-4 hover:bg-primary duration-150 group border border-white border-opacity-10 rounded-xl bg-background">
+                <div className="w-full h-full p-4 hover:bg-primary duration-500 group border border-white border-opacity-10 rounded-xl bg-background">
                   <div>
                     <Image
                       src={value?.img}
@@ -88,10 +88,10 @@ const ClientSaid = () => {
                     />
                   </div>
                   <div className="pt-28">
-                    <p className="font-medium text-[30px] leading-[36px] lg:text-[36px] lg:leading-[40px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86]">
+                    <p className="font-medium text-[30px] leading-[36px] lg:text-[36px] lg:leading-[40px] group-hover:text-background group-hover:opacity-100 text-white opacity-[0.86] duration-500">
                       {value?.title}
                     </p>
-                    <p className="pt-4 text-white lg:text-[18px] opacity-[0.48] group-hover:text-background group-hover:opacity-100">
+                    <p className="pt-4 text-white lg:text-[18px] opacity-[0.48] group-hover:text-background group-hover:opacity-100 duration-500">
                       {value?.content}
                     </p>
                   </div>

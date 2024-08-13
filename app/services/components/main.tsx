@@ -5,7 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { solutionServiceByKey, solutionServiceKey } from "@/app/constants/service";
+import {
+  solutionServiceByKey,
+  solutionServiceKey,
+} from "@/app/constants/service";
 import HeroBanner from "./hero-banner";
 import SolutionService from "./solution";
 import ServeService from "./serve";
@@ -43,6 +46,7 @@ const ServicesMain = () => {
       <HeroBanner
         title={currentSolutions?.title}
         subTitle={currentSolutions?.subTitle}
+        thumbnail={currentSolutions?.thumb}
       />
       <SolutionService solutionList={currentSolutions?.contents} />
       <ServeService />

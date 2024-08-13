@@ -1,7 +1,11 @@
 import { ButtonSecondary } from "@/app/components/custom/button";
+import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
+import { useContext } from "react";
 
 const ConsultantsService = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="py-12 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto">
       <h2 className="text-[28px] lg:text-[60px] font-bold leading-[40px] lg:leading-[72px] lg:text-center opacity-[0.86] hover:scale-105 duration-200">
@@ -15,6 +19,7 @@ const ConsultantsService = () => {
         <ButtonSecondary
           title="Speak with Our Consultants"
           className="w-full lg:w-fit"
+          onClick={() => showContact()}
         />
       </div>
       <div className="pt-8 lg:pt-[72px]">

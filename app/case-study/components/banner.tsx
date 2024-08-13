@@ -1,10 +1,14 @@
+import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
+import { useContext } from "react";
 
 const BannerHeroCaseStudy = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="pb-8 lg:pb-24 pt-8 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
       <Image
-        src={"/images/case_study/hero_img.svg"}
+        src={"/images/case_study/hero_img.jpg"}
         className="w-full h-auto rounded-xl"
         width={1448}
         height={360}
@@ -64,7 +68,10 @@ const BannerHeroCaseStudy = () => {
                 <div className="text-[12px] font-medium opacity-[0.48]">
                   Build your idea
                 </div>
-                <div className="pt-2 font-medium text-primary">
+                <div
+                  className="pt-2 font-medium text-primary cursor-pointer"
+                  onClick={() => showContact()}
+                >
                   Consult our experts
                 </div>
               </div>

@@ -3,12 +3,13 @@ import Image from "next/image";
 interface Props {
   title: string;
   subTitle: string;
+  thumbnail: string;
 }
 
-const HeroBanner = ({ title, subTitle }: Props) => {
+const HeroBanner = ({ title, subTitle, thumbnail }: Props) => {
   return (
     <section className="max-w-[1512px] mx-auto px-4 lg:px-8 py-8 lg:py-24">
-      <div className="solution-img">
+      <div className="solution-img pb-12 lg:pb-24">
         <div className="flex gap-2 items-center lg:justify-center text-[14px] font-medium uppercase">
           <Image
             src={"/images/arrow-right-up.svg"}
@@ -25,8 +26,8 @@ const HeroBanner = ({ title, subTitle }: Props) => {
         </h1>
       </div>
       <Image
-        src={"/images/service/hero_img.png"}
-        className="w-full lg:h-[560px] mt-12 lg:mt-24"
+        src={thumbnail}
+        className="w-full min-h-[358px] lg:h-[560px] rounded-xl object-cover"
         width={1448}
         height={560}
         priority

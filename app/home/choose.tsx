@@ -7,7 +7,7 @@ import clsx from "clsx";
 interface Props {
   index: number;
   currentSelect: number;
-  value: { img: string; title: string; content: string };
+  value: { img: string; imgActive: string; title: string; content: string };
   onHover: (index: number) => void;
 }
 
@@ -27,7 +27,7 @@ const WhyChooseUsItem = ({ value, currentSelect, index, onHover }: Props) => {
     >
       <div className="flex-1">
         <Image
-          src={value?.img}
+          src={isHover ? value?.imgActive : value?.img}
           className="w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] xl:w-[124px] xl:h-[124px]"
           width={124}
           height={124}

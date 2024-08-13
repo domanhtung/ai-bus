@@ -1,8 +1,12 @@
 import { ButtonSecondary } from "@/app/components/custom/button";
 import { serveService } from "@/app/constants/service";
+import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
+import { useContext } from "react";
 
 const ServeService = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="max-w-[1512px] mx-auto lg:px-8 py-8 lg:py-24">
       <div className="px-4 lg:px-0">
@@ -35,11 +39,11 @@ const ServeService = () => {
                 className="h-[171px] lg:h-[368px] lg:p-3 lg:border-b border-white border-opacity-[0.16] border-dashed"
               >
                 <div className="h-full lg:pr-3 lg:border-r border-white border-opacity-[0.16] border-dashed">
-                  <div className="flex w-full h-full p-2 lg:p-0 items-center group justify-center cursor-pointer hover:bg-primary duration-150 rounded-xl">
+                  <div className="flex w-full h-full p-2 lg:p-0 items-center group justify-center cursor-pointer hover:bg-primary duration-500 rounded-xl">
                     <div>
                       <Image
                         src={value?.img}
-                        className="mx-auto w-[32px] h-[32px] lg:w-[72px] lg:h-[72px] group-hover:hidden duration-150"
+                        className="mx-auto w-[32px] h-[32px] lg:w-[72px] lg:h-[72px] group-hover:hidden"
                         width={72}
                         height={72}
                         priority
@@ -47,7 +51,7 @@ const ServeService = () => {
                       />
                       <Image
                         src={value?.imgHover}
-                        className="mx-auto group-hover:w-[56px] group-hover:h-[56px] lg:group-hover:w-[124px] lg:group-hover:h-[124px] hidden group-hover:block duration-150"
+                        className="mx-auto group-hover:w-[56px] group-hover:h-[56px] lg:group-hover:w-[124px] lg:group-hover:h-[124px] hidden group-hover:block"
                         width={72}
                         height={72}
                         priority
@@ -70,6 +74,7 @@ const ServeService = () => {
         <ButtonSecondary
           title="Discuss Your Business Requirements"
           className="w-full lg:w-fit"
+          onClick={() => showContact()}
         />
       </div>
     </section>

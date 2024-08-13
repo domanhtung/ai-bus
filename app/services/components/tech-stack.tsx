@@ -1,8 +1,12 @@
 import { ButtonSecondary } from "@/app/components/custom/button";
 import { techStacksService } from "@/app/constants/service";
+import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
+import { useContext } from "react";
 
 const TechStackService = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="py-8 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
       <div className="px-4 lg:px-0">
@@ -15,6 +19,7 @@ const TechStackService = () => {
           <ButtonSecondary
             title="Meet Our Experts"
             className="w-full lg:w-fit"
+            onClick={() => showContact()}
           />
         </div>
       </div>

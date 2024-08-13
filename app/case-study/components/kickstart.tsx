@@ -1,6 +1,10 @@
 import { ButtonSecondaryDark } from "@/app/components/custom/button";
+import { ContactContext } from "@/app/context/contact-context";
+import { useContext } from "react";
 
 const KickstartCaseStudy = () => {
+  const { showContact } = useContext(ContactContext);
+
   return (
     <section className="bg-white rounded-xl">
       <div className="py-8 lg:py-[70px] max-w-[1512px] px-4 lg:px-8 mx-auto">
@@ -15,6 +19,7 @@ const KickstartCaseStudy = () => {
           <ButtonSecondaryDark
             title="Get in touch"
             className="w-full lg:w-fit"
+            onClick={() => showContact()}
           />
         </div>
       </div>
