@@ -17,9 +17,9 @@ import WhyChooseUsService from "./why-choose-us";
 import ConsultantsService from "./consultant";
 import DeliverExcellence from "./deliver-excellence";
 import ClientSaid from "./client-said";
-import TechStackService from "./tech-stack";
 import Blogs from "@/app/home/blog";
 import Contact from "@/app/home/contact";
+import TechStacks from "@/app/home/tech-stacks";
 
 const ServicesMain = () => {
   const searchParams = useSearchParams();
@@ -55,7 +55,7 @@ const ServicesMain = () => {
       <ConsultantsService />
       <DeliverExcellence />
       <ClientSaid />
-      <TechStackService />
+      <TechStacks />
       <Blogs />
       <Contact />
     </div>
