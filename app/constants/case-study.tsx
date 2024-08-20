@@ -63,7 +63,7 @@ export const resultsCaseStudy = [
 ];
 
 export const masteriviewSaid = {
-  img: "/images/service/client_said_hover.svg",
+  img: "/images/home/client_said.svg",
   name: "Justin Le / CTO, Speedhome inc",
   comment:
     "I am incredibly proud of our AIBus development team for their outstanding work on MateriView. Your dedication to researching and developing the MVP has truly paid off, and the success of the demo to our investors is a testament to your talent and hard work. Thank you for your unwavering commitment and innovation. This achievement marks a significant milestone for our company, and it wouldn't have been possible without each of you.",

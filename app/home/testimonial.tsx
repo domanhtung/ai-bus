@@ -62,7 +62,15 @@ const Testimonial = () => {
                         <div className="flex-1">
                           <Image
                             src={content?.avatar}
-                            className="w-[80px] h-[80px] lg:w-[124px] lg:h-[124px]"
+                            className="avatar-active w-[80px] h-[80px] lg:w-[124px] lg:h-[124px]"
+                            width={124}
+                            height={124}
+                            priority
+                            alt="avatar"
+                          />
+                          <Image
+                            src={content?.avatarInactive}
+                            className="avatar-inactive w-[80px] h-[80px] lg:w-[124px] lg:h-[124px]"
                             width={124}
                             height={124}
                             priority

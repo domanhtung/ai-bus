@@ -10,6 +10,10 @@ export const solutionServiceByKey = {
     title: "AI Solutions for Smarter Business",
     subTitle: "AI-powered Solutions",
     thumb: "/images/service/ai_solution.jpg",
+    potentialTitle: "Unlock the transformative potential of AI",
+    potentialContent:
+      "We can enable you to re-imagine a new age of operational efficiency for your company and release the potential of artificial intelligence.",
+    potentialImg: "/images/service/ai_potential.jpg",
     contents: [
       {
         key: "machine_learning",
@@ -138,6 +142,10 @@ export const solutionServiceByKey = {
     title: "Transforming the Future with Web3 Solutions",
     subTitle: "Blockchain Development",
     thumb: "/images/service/web3_solution.jpg",
+    potentialTitle: "Unlock the transformative potential of Blockchain",
+    potentialContent:
+      "We can enable you to re-imagine a new age of operational efficiency for your company and release the potential of artificial intelligence.",
+    potentialImg: "/images/service/web3_potential.jpg",
     contents: [
       {
         key: "poc_mvp",
@@ -266,6 +274,10 @@ export const solutionServiceByKey = {
     title: "Financial Innovation with AI & Blockchain",
     subTitle: "FinTech Innovations",
     thumb: "/images/service/financial.jpg",
+    potentialTitle: "Unlock the transformative potential of Fintech",
+    potentialContent:
+      "We can enable you to re-imagine a new age of operational efficiency for your company and release the potential of artificial intelligence.",
+    potentialImg: "/images/service/fintech_potential.jpg",
     contents: [
       {
         key: "payments_wallets",
@@ -401,48 +413,48 @@ export const quotesService = [
 
 export const serveService = [
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/e_commerce.svg",
+    imgHover: "/images/service/e_commerce_hover.svg",
     title: "eCommerce",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/logistics.svg",
+    imgHover: "/images/service/logistics_hover.svg",
     title: "Logistics",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/healthcare.svg",
+    imgHover: "/images/service/healthcare_hover.svg",
     title: "Healthcare",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/social_networking.svg",
+    imgHover: "/images/service/social_networking_hover.svg",
     title: "Social Networking",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/education.svg",
+    imgHover: "/images/service/education_hover.svg",
     title: "Education",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/architecture.svg",
+    imgHover: "/images/service/architecture_hover.svg",
     title: "Architecture",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/sale_marketing.svg",
+    imgHover: "/images/service/sale_marketing_hover.svg",
     title: "Sale & Marketing",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/fintech.svg",
+    imgHover: "/images/service/fintech_hover.svg",
     title: "Fintech",
   },
   {
-    img: "/images/service/serve.svg",
-    imgHover: "/images/service/serve_hover.svg",
+    img: "/images/service/on_demand.svg",
+    imgHover: "/images/service/on_demand_hover.svg",
     title: "On-Demand",
   },
 ];
@@ -516,76 +528,51 @@ export const clientSaidService = [
 ];
 
 export const techStacksService = [
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Python",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Big Data",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Machine Learning",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "ETL",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Databricks",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "OpenCV",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Scikit-learn",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Pandas",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Tableau",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Tensorflow",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Grafana",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Azure",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "AWS",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "API",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "DevOps",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Oracle",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "Jupyter",
-  },
-  {
-    img: "/images/service/tech_stack.svg",
-    name: "kubernetes",
-  },
+  "/images/tech_logo/graphQL.svg",
+  "/images/tech_logo/rest_API.svg",
+  "/images/tech_logo/websocket.svg",
+  "/images/tech_logo/flutter.svg",
+  "/images/tech_logo/kotlin.svg",
+  "/images/tech_logo/swift.svg",
+  "/images/tech_logo/react_native.svg",
+  "/images/tech_logo/react.svg",
+  "/images/tech_logo/vuejs.svg",
+  "/images/tech_logo/angular.svg",
+  "/images/tech_logo/nodeJS.svg",
+  "/images/tech_logo/python.svg",
+  "/images/tech_logo/golang.svg",
+  "/images/tech_logo/postgreSQL.svg",
+  "/images/tech_logo/mongoDB.svg",
+  "/images/tech_logo/redis.svg",
+  "/images/tech_logo/elasticsearch.svg",
+  "/images/tech_logo/mySQL.svg",
+  "/images/tech_logo/couchbase.svg",
+  "/images/tech_logo/clickhouse.svg",
+  "/images/tech_logo/kafka.svg",
+  "/images/tech_logo/rabbit_MQ.svg",
+  "/images/tech_logo/redis.svg",
+  "/images/tech_logo/keras.svg",
+  "/images/tech_logo/github_actions.svg",
+  "/images/tech_logo/CICD.svg",
+  "/images/tech_logo/circleci.svg",
+  "/images/tech_logo/AWS.svg",
+  "/images/tech_logo/google_cloud.svg",
+  "/images/tech_logo/kubernetes.svg",
+  "/images/tech_logo/grafana.svg",
+  "/images/tech_logo/prometheus.svg",
+  "/images/tech_logo/sentry.svg",
+  "/images/tech_logo/ethers_js.svg",
+  "/images/tech_logo/wagmi.svg",
+  "/images/tech_logo/viem.svg",
+  "/images/tech_logo/hardhat.svg",
+  "/images/tech_logo/openzeppelin.svg",
+  "/images/tech_logo/truffle.svg",
+  "/images/tech_logo/tensorflow.svg",
+  "/images/tech_logo/pytorch.svg",
+  "/images/tech_logo/keras.svg",
+  "/images/tech_logo/openAI.svg",
+  "/images/tech_logo/S.svg",
+  "/images/tech_logo/a.svg",
+  "/images/tech_logo/noname.svg",
+  "/images/tech_logo/noname_2.svg",
 ];

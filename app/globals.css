@@ -38,6 +38,10 @@ body {
   width: fit-content;
   animation: animationPartner 25s linear infinite;
 }
+.animation-techStack {
+  width: fit-content;
+  animation: animationPartner 150s linear infinite;
+}
 
 .testimonial-swip {
   width: calc(1448px - 612px + 50vw - 724px);
@@ -55,6 +59,18 @@ body {
 .testimonial-swip .swiper-slide-active .card-testimonial p {
   color: #050505;
   opacity: 1;
+}
+.testimonial-swip .card-testimonial .avatar-active {
+  display: none;
+}
+.testimonial-swip .card-testimonial .card-testimonial .avatar-inactive {
+  display: block;
+}
+.testimonial-swip .swiper-slide-active .card-testimonial .avatar-active {
+  display: block;
+}
+.testimonial-swip .swiper-slide-active .card-testimonial .avatar-inactive {
+  display: none;
 }
 .testimonial-swip .swiper-slide-active .card-testimonial .line {
   background-color: #050505;

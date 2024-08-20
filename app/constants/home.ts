@@ -385,22 +385,26 @@ export const partnerList = [
 
 export const testimonialList = [
   {
-    avatar: "/images/home/union.png",
+    avatar: "/images/home/client_said.svg",
+    avatarInactive: "/images/home/client_said_inactive.svg",
     name: "Laura Holder / CEO, Harlond inc",
     des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
   },
   {
-    avatar: "/images/home/union.png",
+    avatar: "/images/home/client_said.svg",
+    avatarInactive: "/images/home/client_said_inactive.svg",
     name: "Mike Clay / COO, Forest Finance jsc",
     des: "Their team provided innovative solutions and managed every aspect of our software project with professionalism and efficiency.",
   },
   {
-    avatar: "/images/home/union.png",
+    avatar: "/images/home/client_said.svg",
+    avatarInactive: "/images/home/client_said_inactive.svg",
     name: "Laura Holder / CEO, Harlond inc",
     des: "AIBUS delivered software solutions that perfectly fit our needs. Their expertise in development and attention to detail made all the difference!",
   },
   {
-    avatar: "/images/home/union.png",
+    avatar: "/images/home/client_said.svg",
+    avatarInactive: "/images/home/client_said_inactive.svg",
     name: "Mike Clay / COO, Forest Finance jsc",
     des: "Their team provided innovative solutions and managed every aspect of our software project with professionalism and efficiency.",
   },

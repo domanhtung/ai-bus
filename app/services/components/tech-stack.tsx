@@ -8,42 +8,43 @@ const TechStackService = () => {
   const { showContact } = useContext(ContactContext);
 
   return (
-    <section className="py-8 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
-      <div className="px-4 lg:px-0">
-        <h2 className="text-[30px] lg:text-[72px] font-bold opacity-[0.86] leading-[44px] lg:leading-[96px] lg:text-center hover:scale-105 duration-200">
-          Tech Stack We Use to
-          <br />
-          Deliver Top-Notch AI Services
-        </h2>
-        <div className="pt-8 text-center">
-          <ButtonSecondary
-            title="Meet Our Experts"
-            className="w-full lg:w-fit"
-            onClick={() => showContact()}
-          />
+    <section>
+      <div className="py-8 lg:py-24 max-w-[1512px] lg:px-8 mx-auto">
+        <div className="px-4 lg:px-0">
+          <h2 className="text-[30px] lg:text-[72px] font-bold opacity-[0.86] leading-[44px] lg:leading-[96px] lg:text-center hover:scale-105 duration-200">
+            Tech Stack We Use to
+            <br />
+            Deliver Top-Notch AI Services
+          </h2>
+          <div className="pt-8 text-center">
+            <ButtonSecondary
+              title="Meet Our Experts"
+              className="w-full lg:w-fit"
+              onClick={() => showContact()}
+            />
+          </div>
         </div>
       </div>
-      <div className="mt-8 lg:mt-[72px] py-8 lg:py-14 bg-white bg-opacity-[0.04] rounded-xl">
-        <div className="overflow-auto no-scroll">
-          <div className="flex lg:grid lg:grid-cols-6 lg:max-w-[1036px] w-fit lg:w-full mx-auto flex-nowrap gap-2 lg:gap-5 px-4 lg:px-0">
-            {techStacksService?.map((value, index) => {
-              return (
-                <div key={index}>
-                  <Image
-                    src={value?.img}
-                    className="min-w-[120px] lg:min-w-0 lg:w-full h-[120px] lg:h-[156px] rounded-lg overflow-hidden bg-white bg-opacity-[0.04] object-contain"
-                    width={156}
-                    height={156}
-                    priority
-                    alt="logo"
-                  />
-                  <div className="pt-4 text-center text-[14px] lg:text-[18px]">
-                    {value?.name}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+      <div className="overflow-hidden">
+        <div className="animation-techStack flex gap-6 flex-nowrap items-center">
+          {[...techStacksService, ...techStacksService]?.map((value, index) => {
+            return (
+              <div
+                key={index}
+                className="relative w-[250px] min-w-[250px] h-[100px] p-3 xl:p-4 group bg-background border border-white border-opacity-10 rounded-xl grayscale hover:grayscale-0 overflow-hidden"
+              >
+                <div className="absolute hidden group-hover:block w-[32px] h-[32px] bottom-0 left-0 rounded-full bg-primary blur-xl" />
+                <Image
+                  src={value}
+                  className="relative w-full h-full object-contain"
+                  width={271}
+                  height={44}
+                  priority
+                  alt="tech stack"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

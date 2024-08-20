@@ -19,7 +19,7 @@ import DeliverExcellence from "./deliver-excellence";
 import ClientSaid from "./client-said";
 import Blogs from "@/app/home/blog";
 import Contact from "@/app/home/contact";
-import TechStacks from "@/app/home/tech-stacks";
+import TechStackService from "./tech-stack";
 
 const ServicesMain = () => {
   const searchParams = useSearchParams();
@@ -52,10 +52,14 @@ const ServicesMain = () => {
       <ServeService />
       <FutureService />
       <WhyChooseUsService />
-      <ConsultantsService />
+      <ConsultantsService
+        potentialTitle={currentSolutions?.potentialTitle}
+        potentialContent={currentSolutions?.potentialContent}
+        potentialImg={currentSolutions?.potentialImg}
+      />
       <DeliverExcellence />
       <ClientSaid />
-      <TechStacks />
+      <TechStackService />
       <Blogs />
       <Contact />
     </div>
