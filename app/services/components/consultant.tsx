@@ -34,7 +34,7 @@ const ConsultantsService = ({
       <div className="pt-8 lg:pt-[72px]">
         <Image
           src={potentialImg}
-          className="w-full h-auto rounded-xl"
+          className="w-full h-[358px] lg:h-auto rounded-xl object-cover"
           width={1448}
           height={480}
           priority
