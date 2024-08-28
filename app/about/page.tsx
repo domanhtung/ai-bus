@@ -1,8 +1,12 @@
+import FormContact from "./components/form-contact";
+import HeroContact from "./components/hero-section";
+
 const About = () => {
   return (
-    <div>
-      <div></div>
-    </div>
+    <main>
+      <HeroContact />
+      <FormContact />
+    </main>
   );
 };
 

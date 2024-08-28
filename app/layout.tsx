@@ -7,6 +7,7 @@ import clsx from "clsx";
 import Footer from "./components/footer";
 import { ContactContextProvider } from "./context/contact-context";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,21 +50,23 @@ export default function RootLayout({
       </head>
       <body className={clsx(inter.className, "bg-background")}>
         <ContactContextProvider>
-          <Header />
-          {children}
-          <ToastContainer
-            position="top-right"
-            autoClose={3000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="colored"
-          />
-          <Footer />
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <div className="flex-1">{children}</div>
+            <ToastContainer
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="colored"
+            />
+            <Footer />
+          </div>
         </ContactContextProvider>
       </body>
     </html>

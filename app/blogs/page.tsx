@@ -1,8 +1,10 @@
+import HeroBlogs from "./components/hero-blog";
+
 const Blogs = () => {
   return (
-    <div>
-      <div></div>
-    </div>
+    <main>
+      <HeroBlogs />
+    </main>
   );
 };
 

@@ -1,10 +1,9 @@
 "use client";
 import { useRef, useState } from "react";
 import Modal from "../custom/modal";
-import { LoadingSubmit } from "../loading/loading";
 import { ButtonPrimary } from "../custom/button";
 import { toast } from "react-toastify";
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 interface Props {
   isOpen: boolean;
@@ -14,9 +13,7 @@ interface Props {
 const ContactModal = ({ isOpen, onClose }: Props) => {
   const formRef = useRef<any>();
   const [dataForm, setDataForm] = useState<any>();
-  const [isSubmit, setIsSubmit] = useState<boolean>(false);
   const [isSumitting, setIsSubmitting] = useState<boolean>(false);
-  const [loading, setLoading] = useState(false);
 
   const changeValue = (key: string, value: string) => {
     const clone = { ...dataForm };
@@ -26,7 +23,6 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
 
   const sendEmail = async (event: any) => {
     event.preventDefault();
-    setIsSubmit(true);
     setIsSubmitting(true);
     if (!dataForm?.name || !dataForm?.email || !dataForm?.phone) {
       toast.error("Please fill all required fields");
@@ -43,11 +39,9 @@ const ContactModal = ({ isOpen, onClose }: Props) => {
         }
       );
       toast.success("Your message was sent successfully");
-      setIsSubmit(false);
       setIsSubmitting(false);
     } catch (e) {
       toast.error("Email failed to send");
-      setIsSubmit(false);
       setIsSubmitting(false);
     }
   };
