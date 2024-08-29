@@ -66,6 +66,7 @@ interface Props {
     title: string;
     path: string;
     subMenu: any;
+    target: string;
   };
   setShowNavbar: Dispatch<SetStateAction<boolean>>;
 }
@@ -139,6 +140,7 @@ const NavName = ({ pathname, navbar, setShowNavbar }: Props) => {
       href={navbar?.path}
       className="relative"
       onClick={() => setShowNavbar(false)}
+      target={navbar?.target}
     >
       <NavLink
         key={navbar?.title}
@@ -183,10 +185,9 @@ const Header = () => {
                   );
                 })}
               </div>
-              <ButtonPrimary
-                title="GET IN TOUCH"
-                onClick={() => showContact()}
-              />
+              <Link href={navbarUrl.contact}>
+                <ButtonPrimary title="GET IN TOUCH" />
+              </Link>
             </div>
             <div
               className="grid lg:hidden gap-[7px] p-2 cursor-pointer"
@@ -215,7 +216,9 @@ const Header = () => {
                 />
               );
             })}
-            <ButtonPrimary title="GET IN TOUCH" onClick={() => showContact()} />
+            <Link href={navbarUrl.contact}>
+              <ButtonPrimary title="GET IN TOUCH" />
+            </Link>
           </div>
         </div>
       </div>

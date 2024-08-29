@@ -15,7 +15,6 @@ import Contact from "./home/contact";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   useEffect(() => {
