@@ -6,7 +6,6 @@ import ApplyNow from "./components/apply-now";
 
 const CareerDetail = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
-  console.log(slug);
   const jobCareer = jobsCareers?.find((job) => job.key === slug);
 
   return (

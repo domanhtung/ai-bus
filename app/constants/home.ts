@@ -5,8 +5,11 @@ export const navbarUrl = {
   services: "/services",
   caseStudy: "/case-study",
   about: "/about",
+  contact: "/contact",
   careers: "/careers",
   blogs: "/blogs",
+  brochure:
+    "https://drive.google.com/file/d/1CcaTTS1y0v-H2m-gtN_HDvCeyLbXbcY8/view",
 };
 
 export const navbarList = [
@@ -14,6 +17,7 @@ export const navbarList = [
     title: "Home",
     path: navbarUrl.home,
     subMenu: null,
+    target: "_parent",
   },
   {
     title: "Services",
@@ -23,26 +27,31 @@ export const navbarList = [
       solutionServiceByKey?.[solutionServiceKey.web3_solution],
       solutionServiceByKey?.[solutionServiceKey.financial_innovation],
     ],
+    target: "_parent",
   },
   {
     title: "Case study",
     path: navbarUrl.caseStudy,
     subMenu: null,
+    target: "_parent",
   },
   {
-    title: "About",
-    path: navbarUrl.about,
+    title: "Brochure",
+    path: navbarUrl.brochure,
     subMenu: null,
+    target: "_blank",
   },
   {
     title: "Careers",
     path: navbarUrl.careers,
     subMenu: null,
+    target: "_parent",
   },
   {
     title: "Blogs",
     path: navbarUrl.blogs,
     subMenu: null,
+    target: "_parent",
   },
 ];
 
@@ -407,51 +416,6 @@ export const testimonialList = [
     avatarInactive: "/images/home/client_said_inactive.svg",
     name: "Mike Clay / COO, Forest Finance jsc",
     des: "Their team provided innovative solutions and managed every aspect of our software project with professionalism and efficiency.",
-  },
-];
-
-export const blogList = [
-  {
-    img: "/images/home/blog.png",
-    title: "Blockchain is Shaping the Future of Financial Services",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "How AI is Transforming Business Operations in 2024?",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "Best Practices for Remote Software Development Team",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "Blockchain is Shaping the Future of Financial Services",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "How AI is Transforming Business Operations in 2024?",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
-  },
-  {
-    img: "/images/home/blog.png",
-    title: "Best Practices for Remote Software Development Team",
-    content: "Add short description about the article here, maximum is 2 lines",
-    author: "Mira",
-    date: "04/12/2024",
   },
 ];
 
