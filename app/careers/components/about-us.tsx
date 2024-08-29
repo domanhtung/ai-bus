@@ -6,7 +6,7 @@ const AboutUsCareers = () => {
       <h2 className="lg:pl-[17%] text-[26px] leading-[36px] lg:text-[48px] lg:leading-[56px] font-bold text-primary hover:scale-105 duration-200">
         For over 10 years
         <span className="text-white opacity-[0.86]">
-          , we've been developers just like you, creating innovative software
+          , we&apos;ve been developers just like you, creating innovative software
           solutions for companies worldwide.
         </span>
       </h2>
@@ -20,7 +20,7 @@ const AboutUsCareers = () => {
       />
       <p className="max-w-[957px] text-[24px] leading-[32px] lg:text-[36px] lg:leading-[40px] font-semibold text-white opacity-[0.48]">
         Our success is driven by a team of skilled professionals who are
-        passionate about creating impactful software. If you're ready to make a
+        passionate about creating impactful software. If you&apos;re ready to make a
         difference, we have a place for you.
       </p>
     </section>

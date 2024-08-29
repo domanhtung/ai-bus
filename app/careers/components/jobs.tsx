@@ -9,7 +9,7 @@ const JobsCareers = () => {
     <section className="py-8 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-7 lg:gap-10 xl:gap-[124px]">
         <div className="hidden lg:block text-[48px] leading-[56px] font-bold text-primary hover:scale-105 duration-200">
-          Be the game-changer we're looking for.
+          Be the game-changer we&apos;re looking for.
         </div>
         <div className="block lg:hidden text-[26px] leading-[36px] font-semibold text-primary hover:scale-105 duration-200">
           Open Positions

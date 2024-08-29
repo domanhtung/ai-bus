@@ -30,7 +30,7 @@ const SubmenuName = ({ index, subMenu, pathname, setShowNavbar }: SubProps) => {
     if (!searchId && !index && pathname === navbarUrl.services) return true;
     if (searchId === subMenu?.key) return true;
     return false;
-  }, [searchId, index, pathname]);
+  }, [searchId, index, pathname, subMenu?.key]);
 
   return (
     <Link
