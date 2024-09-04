@@ -1,81 +1,111 @@
 export const jobsCareers = [
   {
-    key: "be-engineer",
-    title: "Backend Engineer",
+    key: "full-stack-developer",
+    title: "Full stack developer",
     location: "Hanoi",
     type: "Full time",
-    level: "Middle",
-    salary: "$1000-$2000",
-    goalDes: `A Bridge System Engineer will play a role as a communication channel between the developing team in Vietnam and other stakeholders (mostly Japanese) \n
-    Directly communicate with stakeholders via communication tools to meet requirements.\n
-    Prepare documentation for backlog and sprints. \n
-    Research the market trend. Define and articulate the long-term vision, roadmaps, and strategic goals of the product. \n
-    Engage with stakeholders including customers, end-users, business leaders, and development teams to gather feedback and understand requirements. \n
-    Prioritize features and user stories based on stakeholder input and market analysis. Ensure effective communication regarding product development progress. \n
-    Analyze requirements, investigate, and propose solutions.\n
-    Create basic design, and detailed design as needed.\n
-    Review UT, ST, and IT as needed.\n
-    Control product quality.`,
-    experience: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
-    benefit: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
+    level: "Senior",
+    salary: "$2000-$4000",
+    goalDes: `<p>As a Full-Stack Developer, you&rsquo;ll be responsible for developing and maintaining both the front and back end of web applications. You'll collaborate closely with our product, design, and data teams to create high-quality, scalable, and resilient software solutions.</p>
+    <p><strong>Responsibilities:</strong></p>
+    <ul>
+    <li>Develop and maintain web applications using JavaScript.</li>
+    <li>Design and implement robust backend APIs.</li>
+    <li>Manage and optimize databases and indexes with tools like Algolia.</li>
+    <li>Build responsive and adaptive front-end interfaces using React and Next.js.</li>
+    <li>Collaborate with product teams to define features and develop the next generation of products.</li>
+    </ul>`,
+    experience: `<ul>
+    <li>Bachelor&rsquo;s degree in Computer Science, Computer Engineering, or related field (or equivalent experience).</li>
+    <li>Proficiency in front-end languages (HTML, CSS, JavaScript) and frameworks/libraries (React, Next.js).</li>
+    <li>Experience with server-side languages (Node.js, Python, Ruby) and web frameworks (Express, Django, Rails).</li>
+    <li>Strong understanding of database management with relational databases (MySQL, PostgreSQL).</li>
+    <li>Experience with cloud platforms (AWS, Vercel, Netlify, Azure, GCP).</li>
+    <li>Solid understanding of version control tools (GitHub Actions, GitLab CI/CD).</li>
+    <li>Practical knowledge of AI platforms (OpenAI APIs, HuggingFace, Replicate, etc.).</li>
+    <li>Excellent problem-solving skills and attention to detail.</li>
+    <li>Fluency in English with strong communication skills for effective collaboration with global teams.</li>
+    </ul>`,
+    benefit: `<ul>
+    <li>Personalized Mentorship: Receive one-on-one guidance from experienced developers to accelerate your career growth.</li>
+    <li>Career Development: Access to a variety of training resources, workshops, and certifications to enhance your skills.</li>
+    <li>Flexible Work Environment: Enjoy flexible working hours and the option to work remotely, balancing work with your lifestyle.</li>
+    <li>Cutting-Edge Projects: Work on innovative projects that challenge your skills and expand your expertise in front-end development.</li>
+    <li>Collaborative Culture: Be part of a supportive and dynamic team where your ideas are valued, and collaboration is encouraged.</li>
+    <li>Growth Opportunities: Fast-track your career in a company that prioritizes internal promotions and continuous learning.</li>
+    </ul>`,
   },
   {
-    key: "fe-engineer",
-    title: "Frontend Engineer",
+    key: "fe-developer",
+    title: "Front-end Developer",
     location: "Hanoi",
     type: "Full time",
     level: "Middle",
-    salary: "$1000-$2000",
-    goalDes: `A Bridge System Engineer will play a role as a communication channel between the developing team in Vietnam and other stakeholders (mostly Japanese) \n
-    Directly communicate with stakeholders via communication tools to meet requirements.\n
-    Prepare documentation for backlog and sprints. \n
-    Research the market trend. Define and articulate the long-term vision, roadmaps, and strategic goals of the product. \n
-    Engage with stakeholders including customers, end-users, business leaders, and development teams to gather feedback and understand requirements. \n
-    Prioritize features and user stories based on stakeholder input and market analysis. Ensure effective communication regarding product development progress. \n
-    Analyze requirements, investigate, and propose solutions.\n
-    Create basic design, and detailed design as needed.\n
-    Review UT, ST, and IT as needed.\n
-    Control product quality.`,
-    experience: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
-    benefit: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
+    salary: "$1000-$1500",
+    goalDes: `<p>As a Junior Front-End Developer, you will assist in the development and maintenance of web interfaces, ensuring they are user-friendly, responsive, and visually appealing. You'll work closely with our senior developers, designers, and product teams to build and enhance our web applications.</p>
+    <p>Responsibilities:</p>
+    <ul>
+    <li>Develop and maintain front-end components using HTML, CSS, and JavaScript.</li>
+    <li>Assist in creating responsive and adaptive user interfaces with frameworks like React or Angular.</li>
+    <li>Collaborate with designers to implement UI/UX designs.</li>
+    <li>Optimize web pages for maximum speed and scalability.</li>
+    <li>Participate in code reviews and contribute to team discussions.</li>
+    </ul>`,
+    experience: `<ul>
+    <li>Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent experience).</li>
+    <li>Basic knowledge of HTML, CSS, and JavaScript.</li>
+    <li>Familiarity with front-end frameworks/libraries (React, Angular, or Vue.js).</li>
+    <li>Understanding of responsive design principles.</li>
+    <li>Experience with version control systems (Git).</li>
+    <li>Eagerness to learn and adapt in a fast-paced environment.</li>
+    <li>Strong attention to detail and problem-solving skills.</li>
+    <li>Basic understanding of web performance optimization techniques.</li>
+    </ul>`,
+    benefit: `<ul>
+    <li>Personalized Mentorship: Receive one-on-one guidance from experienced developers to accelerate your career growth.</li>
+    <li>Career Development: Access to a variety of training resources, workshops, and certifications to enhance your skills.</li>
+    <li>Flexible Work Environment: Enjoy flexible working hours and the option to work remotely, balancing work with your lifestyle.</li>
+    <li>Cutting-Edge Projects: Work on innovative projects that challenge your skills and expand your expertise in front-end development.</li>
+    <li>Collaborative Culture: Be part of a supportive and dynamic team where your ideas are valued, and collaboration is encouraged.</li>
+    <li>Growth Opportunities: Fast-track your career in a company that prioritizes internal promotions and continuous learning.</li>
+    </ul>`,
   },
   {
-    key: "blockchain-engineer",
-    title: "Blockchain Engineer",
+    key: "be-developer",
+    title: "Back-end Developer",
     location: "Hanoi",
     type: "Full time",
     level: "Middle",
     salary: "$1000-$2000",
-    goalDes: `A Bridge System Engineer will play a role as a communication channel between the developing team in Vietnam and other stakeholders (mostly Japanese) \n
-    Directly communicate with stakeholders via communication tools to meet requirements.\n
-    Prepare documentation for backlog and sprints. \n
-    Research the market trend. Define and articulate the long-term vision, roadmaps, and strategic goals of the product. \n
-    Engage with stakeholders including customers, end-users, business leaders, and development teams to gather feedback and understand requirements. \n
-    Prioritize features and user stories based on stakeholder input and market analysis. Ensure effective communication regarding product development progress. \n
-    Analyze requirements, investigate, and propose solutions.\n
-    Create basic design, and detailed design as needed.\n
-    Review UT, ST, and IT as needed.\n
-    Control product quality.`,
-    experience: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
-    benefit: `Japanese skill at least N2\n
-    Minimum 1 year of working experience as BrSE/ Product Owner. \n
-    Have experience using at: NodeJS or C#; .NET framework\n
-    Have experience in working with MetaTrader (MT5/MT4) or Blockchain/Crypto Exchange is a big plus. `,
+    goalDes: `<p>As a Junior Back-End Developer, you will contribute to the design, development, and maintenance of server-side applications. You will collaborate closely with our product, front-end, and data teams to build reliable, scalable, and high-performance solutions.</p>
+    <p>Responsibilities:</p>
+    <ul>
+    <li>Develop and maintain server-side logic using languages like Node.js, Python, or Ruby.</li>
+    <li>Design and implement RESTful APIs to support front-end functionality.</li>
+    <li>Manage and optimize databases (e.g., MySQL, PostgreSQL) to ensure data integrity and performance.</li>
+    <li>Collaborate with front-end developers to integrate user-facing elements with server-side logic.</li>
+    <li>Write clean, reusable, and efficient code following best practices.</li>
+    <li>Troubleshoot and debug applications to ensure smooth operation.</li>
+    <li>Participate in code reviews and contribute to continuous improvement.</li>
+    </ul>`,
+    experience: `<ul>
+    <li>Bachelor&rsquo;s degree in Computer Science, Computer Engineering, or related field (or equivalent experience).</li>
+    <li>Proficiency in back-end programming languages (Node.js, Python, Ruby).</li>
+    <li>Understanding of database management systems (e.g., MySQL, PostgreSQL).</li>
+    <li>Familiarity with version control tools like Git.</li>
+    <li>Basic knowledge of cloud platforms (AWS, Azure, GCP) is a plus.</li>
+    <li>Strong problem-solving skills and attention to detail.</li>
+    <li>Ability to work in a collaborative, team-oriented environment.</li>
+    <li>Fluency in English, with good communication skills.</li>
+    </ul>`,
+    benefit: `<ul>
+    <li>Personalized Mentorship: Receive one-on-one guidance from experienced developers to accelerate your career growth.</li>
+    <li>Career Development: Access to a variety of training resources, workshops, and certifications to enhance your skills.</li>
+    <li>Flexible Work Environment: Enjoy flexible working hours and the option to work remotely, balancing work with your lifestyle.</li>
+    <li>Cutting-Edge Projects: Work on innovative projects that challenge your skills and expand your expertise in front-end development.</li>
+    <li>Collaborative Culture: Be part of a supportive and dynamic team where your ideas are valued, and collaboration is encouraged.</li>
+    <li>Growth Opportunities: Fast-track your career in a company that prioritizes internal promotions and continuous learning.</li>
+    </ul>`,
   },
 ];
 

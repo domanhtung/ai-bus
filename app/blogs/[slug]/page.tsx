@@ -4,6 +4,7 @@ import Image from "next/image";
 const BlogDetail = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
   const blog = blogsList?.find((value) => value?.key === slug);
+  return null;
 
   return (
     <section className="py-6 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">

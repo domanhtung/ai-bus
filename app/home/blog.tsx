@@ -6,6 +6,7 @@ import Link from "next/link";
 import { navbarUrl } from "../constants/home";
 
 const Blogs = () => {
+  return null;
   return (
     <div className="max-w-[1512px] mx-auto px-0 lg:px-8 py-8 xl:py-24">
       <div className="px-4 lg:px-0">

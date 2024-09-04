@@ -125,6 +125,10 @@ body {
   width: 100%;
   height: "auto";
 }
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
 @keyframes animationPartner {
   from {
     transform: translate(0, 0);

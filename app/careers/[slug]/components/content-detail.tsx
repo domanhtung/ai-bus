@@ -38,9 +38,12 @@ const CareerContentDetail = ({ jobCareer }: Props) => {
               <div className="block lg:hidden text-[26px] leading-[36px] font-semibold text-white opacity-[0.86] hover:scale-105 duration-200">
                 {section?.titleMobile}
               </div>
-              <div className="text-[14px] leading-[20px] lg:text-[16px] lg:leading-[28px] text-white opacity-[0.48]">
-                {(jobCareer as any)?.[section?.key]}
-              </div>
+              <div
+                className="text-[14px] leading-[20px] lg:text-[16px] lg:leading-[28px] text-white opacity-[0.48]"
+                dangerouslySetInnerHTML={{
+                  __html: (jobCareer as any)?.[section?.key],
+                }}
+              ></div>
             </div>
           </section>
         );
