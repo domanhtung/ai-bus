@@ -4,6 +4,8 @@ import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
 import { useContext } from "react";
 import { ButtonSecondary } from "@/app/components/custom/button";
+import Link from "next/link";
+import { navbarUrl } from "@/app/constants/home";
 
 const ServeCareers = () => {
   const { showContact } = useContext(ContactContext);
@@ -56,11 +58,9 @@ const ServeCareers = () => {
         </div>
       </div>
       <div className="flex justify-end pt-8 lg:pt-0 px-4 lg:px-8">
-        <ButtonSecondary
-          title="Show all jobs"
-          className="w-full lg:w-fit"
-          onClick={() => showContact()}
-        />
+        <Link href={navbarUrl.careers}>
+          <ButtonSecondary title="Show all jobs" className="w-full lg:w-fit" />
+        </Link>
       </div>
     </section>
   );

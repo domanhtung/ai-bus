@@ -1,12 +1,34 @@
+"use client";
+import { ButtonSecondary } from "@/app/components/custom/button";
 import { jobsCareers } from "@/app/constants/career";
 import { navbarUrl } from "@/app/constants/home";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const JobsCareers = () => {
+  const [currentJobs, setCurrentJob] = useState<any>([
+    jobsCareers?.[0],
+    jobsCareers?.[1],
+  ]);
+  const [isShowMore, setIsShowMore] = useState<boolean>(false);
+
+  const showMore = () => {
+    if (isShowMore) {
+      setIsShowMore(false);
+      setCurrentJob([jobsCareers?.[0], jobsCareers?.[1]]);
+    } else {
+      setIsShowMore(true);
+      setCurrentJob(jobsCareers);
+    }
+  };
+
   return (
-    <section className="py-8 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
+    <section
+      id="list-job"
+      className="py-8 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden"
+    >
       <div className="grid lg:grid-cols-2 gap-7 lg:gap-10 xl:gap-[124px]">
         <div className="hidden lg:block text-[48px] leading-[56px] font-bold text-primary hover:scale-105 duration-200">
           Be the game-changer we&apos;re looking for.
@@ -15,14 +37,14 @@ const JobsCareers = () => {
           Open Positions
         </div>
         <div>
-          {jobsCareers?.map((job, index) => {
+          {currentJobs?.map((job: any, index: number) => {
             return (
               <Link key={job?.key} href={`${navbarUrl?.careers}/${job?.key}`}>
                 <div
                   className={clsx(
                     "flex justify-between lg:justify-start lg:grid grid-cols-3 gap-5 py-7 lg:py-11 border-b border-white border-opacity-[0.16] border-dashed cursor-pointer",
                     index === 0 && "pt-0",
-                    index === jobsCareers?.length - 1 && "pb-0 border-none"
+                    index === currentJobs?.length - 1 && "pb-0 border-none"
                   )}
                 >
                   <div className="text-[16px] leading-[28px] font-medium text-white opacity-[0.86]">
@@ -56,6 +78,12 @@ const JobsCareers = () => {
               </Link>
             );
           })}
+          <div className="flex justify-end">
+            <ButtonSecondary
+              title={isShowMore ? "View less" : "View more"}
+              onClick={showMore}
+            />
+          </div>
         </div>
       </div>
     </section>

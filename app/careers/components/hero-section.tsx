@@ -1,11 +1,13 @@
 "use client";
 import { ButtonSecondary } from "@/app/components/custom/button";
-import { ContactContext } from "@/app/context/contact-context";
 import Image from "next/image";
-import { useContext } from "react";
 
 const HeroSectionCareers = () => {
-  const { showContact } = useContext(ContactContext);
+  const gotoListJob = () => {
+    const section = document?.getElementById("list-job");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-6 lg:py-24 max-w-[1512px] px-4 lg:px-8 mx-auto overflow-hidden">
       <div className="flex gap-2 items-center text-[14px] font-medium uppercase">
@@ -26,7 +28,7 @@ const HeroSectionCareers = () => {
         <ButtonSecondary
           title="See Open Positions"
           className="w-full lg:w-fit"
-          onClick={() => showContact()}
+          onClick={() => gotoListJob()}
         />
       </div>
     </section>
