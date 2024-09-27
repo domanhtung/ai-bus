@@ -126,6 +126,7 @@ const AIBusContactForm = () => {
           placeholder="Contact number*"
           type="file"
           id="fileInput"
+          disabled={loading}
           className="hidden"
           accept="application/pdf"
           onChange={uploadFile}
@@ -144,6 +145,7 @@ const AIBusContactForm = () => {
         <ButtonPrimary
           title={isSumitting ? "Sending..." : "Submit"}
           className="w-full"
+          disabled={isSumitting}
           onClick={sendEmail}
         />
       </div>
