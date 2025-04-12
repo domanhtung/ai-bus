@@ -3,13 +3,13 @@ import { solutionServiceByKey, solutionServiceKey } from "./service";
 export const navbarUrl = {
   home: "/",
   services: "/services",
-  caseStudy: "/case-study",
+  caseStudy: "https://drive.google.com/file/d/1mnYNUQTfxhA0cPfVsYtIlWDHIYOs-A0p/view",//"/case-study",
   about: "/about",
   contact: "/contact",
   careers: "/careers",
   blogs: "/blogs",
-  brochure:
-    "https://drive.google.com/file/d/1CcaTTS1y0v-H2m-gtN_HDvCeyLbXbcY8/view",
+  // brochure:
+  //   "https://drive.google.com/file/d/1CcaTTS1y0v-H2m-gtN_HDvCeyLbXbcY8/view",
 };
 
 export const navbarList = [
@@ -33,14 +33,14 @@ export const navbarList = [
     title: "Case study",
     path: navbarUrl.caseStudy,
     subMenu: null,
-    target: "_parent",
-  },
-  {
-    title: "Brochure",
-    path: navbarUrl.brochure,
-    subMenu: null,
     target: "_blank",
   },
+  // {
+  //   title: "Brochure",
+  //   path: navbarUrl.brochure,
+  //   subMenu: null,
+  //   target: "_blank",
+  // },
   {
     title: "Careers",
     path: navbarUrl.careers,
@@ -422,12 +422,12 @@ export const testimonialList = [
 export const socialList = [
   {
     icon: "/images/telegram.svg",
-    name: "+84 33 777 8715",
+    name: "+84 98 420 8895",
     link: "https://t.me/mira_nguyen",
   },
   {
     icon: "/images/whatsapp.svg",
-    name: "+84 33 777 8715",
+    name: "+84 98 420 8895",
     link: "",
   },
   {

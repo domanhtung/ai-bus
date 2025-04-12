@@ -5,11 +5,11 @@ export const heroContact = [
   },
   {
     title: "Phone number",
-    content: "+84 33 777 8715",
+    content: "+84 98 420 8895",
   },
   {
     title: "Telegram",
-    content: "+84 33 777 8715",
+    content: "+84 98 420 8895",
   },
   {
     title: "Mail",
